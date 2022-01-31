@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-document.title ="Foodable"
+document.title ="foodable"
 
 ReactDOM.render(
   <React.StrictMode>
