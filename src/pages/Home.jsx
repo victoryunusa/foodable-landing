@@ -7,7 +7,7 @@ import environment from '../assets/images/environment.png'
 const Home = () => {
     return (
         <>
-            <div className="flex justify-between px-15 py-8 max-w-screen-xl mx-auto">
+            <div className="flex justify-between px-15 py-8 max-w-screen-xl gap-10 mx-auto">
                 <div className="w-1/2">
                     <h1 className="text-5xl font-bold pt-4 tracking-tighter leading-tight pb-4">Sourcing the <span className="text-green-600">freshest</span> ingredients for your restaurant.</h1>
                     <p className="leading-relaxed tracking-wide">Join our community of leading caterers, restaurateurs and hospitality businesses who enjoy better buying power whilst ensuring fair pricing, traceability and quality across all produce categories.</p>

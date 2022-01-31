@@ -3,7 +3,7 @@ import { Outlet, Link } from 'react-router-dom'
 
 const MainLayout = () => {
     return (
-        <div className="w-full min-h-screen font-rubik relative text-neutral-700">
+        <div className="w-full min-h-screen font-open relative text-neutral-700">
             <div className="bg-green-100">
                 <nav className="flex items-center justify-between px-15 py-8 max-w-screen-xl mx-auto">
                     <Link to="/" className="text-4xl tracking-wide font-bold">
