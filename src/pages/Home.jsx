@@ -26,21 +26,21 @@ const Home = () => {
                 </div>
             </div>
             <div className="w-full bg-white ">
-                <div className="flex justify-center  px-15 py-14 max-w-screen-xl mx-auto">
-                    <div className="w-1/3 border-r-2 border-neutral-700 mr-4">
-                        <img src={retail} alt="retail" className="w-10 pb-5" />
+                <div className="flex justify-center  px-15 py-14 max-w-screen-xl mx-auto gap-4">
+                    <div className="w-1/3 border border-neutral-500 mr-4 p-5 rounded-md">
+                        <img src={retail} alt="retail" className="w-10 pb-2" />
                         <h1 className="text-xl font-bold">Retail prices</h1>
                         <p className="text-sm">Same prices as your local supermarket & no minimum order value.</p>
                     </div>
-                    <div className="w-1/3 border-r-2 border-neutral-700 mr-4">
-                        <img src={delivery} alt="delivery" className="w-10 pb-5" />
+                    <div className="w-1/3 border border-neutral-500 mr-4 p-5 rounded-md">
+                        <img src={delivery} alt="delivery" className="w-10 pb-2" />
                         <h1 className="text-xl font-bold">Instant delivery</h1>
-                        <p className="text-sm tracking-tighter">Timing is everything. We’ll be at your door before you know it.</p>
+                        <p className="text-sm tracking-tight">Timing is everything. We’ll be at your door before you know it.</p>
                     </div>
-                    <div className="w-1/3">
-                        <img src={environment} alt="environment" className="w-10 pb-5" />
+                    <div className="w-1/3 border border-neutral-500 mr-4 p-5 rounded-md">
+                        <img src={environment} alt="environment" className="w-10 pb-2" />
                         <h1 className="text-xl font-bold">Sustainability at our core</h1>
-                        <p className="text-sm tracking-tighter">Our business decisions and goals are towards achieving carbon neutrality by 2022.</p>
+                        <p className="text-sm tracking-tight">Our business decisions and goals are towards achieving carbon neutrality by 2022.</p>
                     </div>
                 </div>
             </div>
@@ -59,15 +59,31 @@ const Home = () => {
                                 <path d="M3.5 10L4.91 18.64C5.23 20.58 6 22 8.86 22H14.89C18 22 18.46 20.64 18.82 18.76L20.5 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                                 </svg>
                             </div>
+                            <div className="relative">
+                                <div className="absolute flex items-center inset-y-0 -right-5">
+                                    <svg className="w-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.4297 5.93018L20.4997 12.0002L14.4297 18.0702" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path opacity="0.4" d="M3.5 12H20.33" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
                             <div className="w-1/2 flex flex-col justify-center items-center p-10">
-                                <h1 className="text-lg font-bold">Continue to payment</h1>
-                                <p className="text-sm">Choose to pay now, pay on delivery or pay later.</p>
+                                <h1 className="text-lg font-bold">Add products to cart</h1>
+                                <p className="text-sm">Sign in and collect all your produce to cart.</p>
                             </div>
                         </div>
                         <div className="flex flex-row">
-                            <div className="w-1/2 flex flex-col justify-start items-center pl-0 p-7">
+                            <div className="w-1/2 flex flex-col justify-center items-center pl-0 p-7">
                                 <h1 className="text-lg font-bold">Continue to payment</h1>
-                                <p>Choose to pay now, pay on delivery or pay later.</p>
+                                <p className="text-sm">Choose to pay now, pay on delivery or pay later.</p>
+                            </div>
+                            <div className="relative">
+                                <div className="absolute flex items-center inset-y-0 -right-5">
+                                    <svg className="w-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.4297 5.93018L20.4997 12.0002L14.4297 18.0702" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path opacity="0.4" d="M3.5 12H20.33" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
                             </div>
                             <div className="w-1/2 flex bg-green-100 justify-center items-center p-10 rounded-md">   
                                 <svg className="w-52 h-52 text-green-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,8 +110,10 @@ const Home = () => {
                         <path opacity="0.4" d="M3 18L2 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         <path opacity="0.4" d="M21 18L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <h1 className="font-bold">Wait for your groceries</h1>
-                        <p className="justify-start items-center">We'll deliver as early as possible or according to your date preferences</p>
+                        <div className="flex flex-col justify-start items-center">
+                            <h1 className="font-bold">Wait for your groceries</h1>
+                            <p className="text-sm tracking-tight">We'll deliver as early as possible or according to your date preferences</p>
+                        </div>
                     </div>
                 </div>
             </div>
