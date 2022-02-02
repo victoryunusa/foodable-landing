@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/images/landing-2.png'
+import logo from '../assets/images/grocery.jpg'
 import retail from '../assets/images/price-tag.png'
 import delivery from '../assets/images/delivery-truck.png'
 import environment from '../assets/images/environment.png'
@@ -9,7 +9,7 @@ const Home = () => {
         <>
             <div className="flex justify-between px-15 py-8 max-w-screen-xl gap-10 mx-auto text-white">
                 <div className="w-1/2">
-                    <h1 className="text-5xl font-bold pt-4 tracking-tighter leading-tight pb-4">Sourcing the <span className="text-green-500">freshest</span> ingredients for your restaurant.</h1>
+                    <h1 className="text-5xl font-bold pt-4 tracking-tight leading-tight pb-4">Sourcing the <span className="text-green-500">freshest</span> ingredients for your restaurant.</h1>
                     <p className="leading-relaxed tracking-wide mt-4">Join our community of over <span className="font-bold text-xl ">500</span> leading caterers, restaurateurs and hospitality businesses who enjoy better buying power whilst ensuring fair pricing, traceability and quality across all produce categories.</p>
                     <div className="flex gap-x-6 items-center pt-12 mb-10">
                         <button className="py-3 px-3 w-32 border border-green-500 text-green-500 hover:bg-teal-700 hover:border-none hover:text-white font-normal rounded-md">Login</button>
@@ -17,8 +17,8 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="w-1/2 relative">
-                    <img className="max-w-xl self-end" src={logo} alt="landing.png" />
-                    <div className="absolute -right-6 top-32 flex flex-col py-5 px-7 rounded-md shadow-xl bg-white/70 backdrop-blur-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                    <img className="max-w-md self-end rounded-full" src={logo} alt="landing.png" />
+                    <div className="absolute -right-1 top-32 flex flex-col py-5 px-5 rounded-md shadow-xl bg-white/70 backdrop-blur-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
                         <div className="font-bold text-teal-900">Fast delivery</div>
                         <div className="font-bold text-teal-900">2 hours delivery 🚀</div>
                     </div>
@@ -116,6 +116,7 @@ const Home = () => {
                         <div className="flex flex-col justify-start items-center">
                             <h1 className="font-bold">Wait for your groceries</h1>
                             <p className="tracking-tight">We'll deliver as early as possible or according to your date preferences</p>
+                            
                         </div>
                     </div>
                 </div>
