@@ -9,16 +9,16 @@ const Home = () => {
         <>
             <div className="flex justify-between px-15 py-8 max-w-screen-xl gap-10 mx-auto text-white">
                 <div className="w-1/2">
-                    <h1 className="text-5xl font-bold pt-4 tracking-tight leading-tight pb-4">Sourcing the <span className="text-green-500">freshest</span> ingredients for your restaurant.</h1>
-                    <p className="leading-relaxed tracking-wide mt-4">Join our community of over <span className="font-bold text-xl ">500</span> leading caterers, restaurateurs and hospitality businesses who enjoy better buying power whilst ensuring fair pricing, traceability and quality across all produce categories.</p>
+                    <h1 className="text-5xl font-rubik font-bold pt-4 tracking-tight leading-tight pb-4">Sourcing the <span className="text-green-500">freshest</span> ingredients for your restaurant.</h1>
+                    <p className="leading-relaxed tracking-wider mt-4">Join our community of over <span className="font-bold text-xl ">500+</span> leading caterers, restaurateurs and hospitality businesses who enjoy better buying power whilst ensuring fair pricing, traceability and quality across all produce categories.</p>
                     <div className="flex gap-x-6 items-center pt-12 mb-10">
                         <button className="py-3 px-3 w-32 border border-green-500 text-green-500 hover:bg-teal-700 hover:border-none hover:text-white font-normal rounded-md">Login</button>
                         <button className="flex justify-center items-center bg-green-500 hover:bg-teal-700 text-white py-3 px-3 w-32 rounded-md">Sign Up</button>
                     </div>
                 </div>
                 <div className="w-1/2 relative">
-                    <img className="max-w-md self-end rounded-full" src={logo} alt="landing.png" />
-                    <div className="absolute -right-1 top-32 flex flex-col py-5 px-5 rounded-md shadow-xl bg-white/70 backdrop-blur-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                    <img className="max-w-md self-end rounded-full animate__lightSpeedInRight" src={logo} alt="landing.png" />
+                    <div className="absolute -right-1 top-32 flex  font-rubik flex-col py-5 px-5 rounded-md shadow-xl bg-white/70 backdrop-blur-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
                         <div className="font-bold text-teal-900">Fast delivery</div>
                         <div className="font-bold text-teal-900">2 hours delivery 🚀</div>
                     </div>
@@ -27,17 +27,17 @@ const Home = () => {
             </div>
             <div className="w-full bg-white">
                 <div className="flex justify-center  px-15 py-14 max-w-screen-xl mx-auto gap-10">
-                    <div className="w-1/3 border border-neutral-500 mr-4 p-5 rounded-md">
+                    <div className="w-1/3 border-2 border-neutral-500 mr-4 p-5 rounded-md">
                         <img src={retail} alt="retail" className="w-10 pb-5" />
                         <h1 className="text-xl font-bold mb-2">Retail prices</h1>
                         <p className="">Same prices as your local supermarket & no minimum order value.</p>
                     </div>
-                    <div className="w-1/3 border border-neutral-500 mr-4 p-5 rounded-md">
+                    <div className="w-1/3 border-2 border-neutral-500 mr-4 p-5 rounded-md">
                         <img src={delivery} alt="delivery" className="w-10 pb-5" />
                         <h1 className="text-xl font-bold mb-2">Instant delivery</h1>
                         <p className="tracking-tight">Timing is everything. We’ll be at your door before you know it.</p>
                     </div>
-                    <div className="w-1/3 border border-neutral-500 mr-4 p-5 rounded-md">
+                    <div className="w-1/3 border-2 border-neutral-500 mr-4 p-5 rounded-md">
                         <img src={environment} alt="environment" className="w-10 pb-5" />
                         <h1 className="text-xl font-bold mb-2">Sustainability at our core</h1>
                         <p className="tracking-tight">Our business decisions and goals are towards achieving carbon neutrality by 2022.</p>
@@ -71,13 +71,13 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className="w-1/2 flex flex-col justify-center items-center p-10">
-                                <h1 className="text-lg font-bold">Add products to cart</h1>
+                                <h1 className="text-xl font-bold">Add products to cart</h1>
                                 <p className="">Sign in and collect all your produce to cart.</p>
                             </div>
                         </div>
                         <div className="flex flex-row">
                             <div className="w-1/2 flex flex-col justify-center items-center pl-0 p-7">
-                                <h1 className="text-lg font-bold">Continue to payment</h1>
+                                <h1 className="text-xl font-bold">Continue to payment</h1>
                                 <p className="">Choose to pay now, pay on delivery or pay later.</p>
                             </div>
                             <div className="relative">
@@ -114,7 +114,7 @@ const Home = () => {
                         <path opacity="0.4" d="M21 18L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <div className="flex flex-col justify-start items-center">
-                            <h1 className="font-bold">Wait for your groceries</h1>
+                            <h1 className="font-bold text-xl">Wait for your groceries</h1>
                             <p className="tracking-tight">We'll deliver as early as possible or according to your date preferences</p>
                             
                         </div>
