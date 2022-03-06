@@ -1,19 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import store from './Redux/store';
-import { Provider } from 'react-redux';
-import './index.css';
-import 'animate.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import "./index.css";
+import "animate.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-document.title ="foodable"
+document.title = "foodable";
 
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider>
     <App />
   </Provider>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
