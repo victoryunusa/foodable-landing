@@ -3,6 +3,7 @@ import logo from '../assets/images/grocery.jpg'
 import retail from '../assets/images/price-tag.png'
 import delivery from '../assets/images/delivery-truck.png'
 import environment from '../assets/images/environment.png'
+import truck from '../assets/images/truck.png'
 
 const Home = () => {
     return (
@@ -17,7 +18,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="w-1/2 relative">
-                    <img className="max-w-md self-end rounded-full animate__lightSpeedInRight" src={logo} alt="landing.png" />
+                    <img className="max-w-md self-end rounded-full animate__light SpeedInRight" src={logo} alt="landing.png" />
                     <div className="absolute -right-1 top-32 flex  font-rubik flex-col py-5 px-5 rounded-md shadow-xl bg-white/70 backdrop-blur-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
                         <div className="font-bold text-teal-900">Fast delivery</div>
                         <div className="font-bold text-teal-900">2 hours delivery 🚀</div>
@@ -118,6 +119,14 @@ const Home = () => {
                             <p className="tracking-tight">We'll deliver as early as possible or according to your date preferences</p>
                             
                         </div>
+                    </div>
+                </div>
+                <div className="flex w-full bg-green-100 rounded-md">
+                    <div className="w-1/2 flex flex-row">
+                        <img className="w-full" src={truck} alt="truck" />
+                    </div>
+                    <div className="w-1/2 flex flex-row">
+                        
                     </div>
                 </div>
             </div>
