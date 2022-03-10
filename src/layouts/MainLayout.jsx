@@ -56,16 +56,16 @@ const MainLayout = () => {
                   <div className="flex flex-col w-1/3">
                     <h3 className="font-bold pb-4 text-xl">General</h3>
                     <ul className="flex flex-col gap-y-2">
-                      <li>
+                      <li className="hover:underline hover:underline-offset-2">
                         <Link to="#">Restaurants</Link>
                       </li>
-                      <li>
+                      <li className="hover:underline hover:underline-offset-2">
                         <Link to="#">Suppliers</Link>
                       </li>
-                      <li>
+                      <li className="hover:underline hover:underline-offset-2">
                         <Link to="#">FAQ</Link>
                       </li>
-                      <li>
+                      <li className="hover:underline hover:underline-offset-2">
                         <Link to="#">Product updates</Link>
                       </li>
                     </ul>
@@ -73,16 +73,16 @@ const MainLayout = () => {
                   <div className="flex flex-col w-1/3">
                     <h3 className="font-bold pb-4 text-xl">Work with us</h3>
                     <ul className="flex flex-col gap-y-2">
-                      <li>
+                      <li className="hover:underline hover:underline-offset-2">
                         <Link to="#">About</Link>
                       </li>
-                      <li>
+                      <li className="hover:underline hover:underline-offset-2">
                         <Link to="#">Careers</Link>
                       </li>
-                      <li>
+                      <li className="hover:underline hover:underline-offset-2">
                         <Link to="#">Contact us</Link>
                       </li>
-                      <li>
+                      <li className="hover:underline hover:underline-offset-2">
                         <Link to="#">Press</Link>
                       </li>
                     </ul>
@@ -92,16 +92,16 @@ const MainLayout = () => {
                       Follow our stories
                     </h3>
                     <ul className="flex flex-col gap-y-2">
-                      <li>
+                      <li className="hover:underline hover:underline-offset-2">
                         <Link to="#">Restaurant management</Link>
                       </li>
-                      <li>
+                      <li className="hover:underline hover:underline-offset-2">
                         <Link to="#">Producer guide</Link>
                       </li>
-                      <li>
+                      <li className="hover:underline hover:underline-offset-2">
                         <Link to="#">Life at Foodable</Link>
                       </li>
-                      <li>
+                      <li className="hover:underline hover:underline-offset-2">
                         <Link to="#">Foodable Chef Lab</Link>
                       </li>
                     </ul>
