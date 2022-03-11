@@ -5,7 +5,6 @@ import retail from "../assets/images/money.png";
 import delivery from "../assets/images/delivery-bike.png";
 import environment from "../assets/images/barcode-scanner (1).png";
 import convenience from "../assets/images/badge.png";
-import truck from "../assets/images/truck.png";
 
 const Home = () => {
   return (
