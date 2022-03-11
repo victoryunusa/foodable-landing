@@ -1,8 +1,10 @@
 import React from "react";
+import { Animated } from "react-animated-css";
 import logo from "../assets/images/grocery.jpg";
-import retail from "../assets/images/price-tag.png";
-import delivery from "../assets/images/delivery-truck.png";
-import environment from "../assets/images/environment.png";
+import retail from "../assets/images/money.png";
+import delivery from "../assets/images/delivery-bike.png";
+import environment from "../assets/images/barcode-scanner (1).png";
+import convenience from "../assets/images/badge.png";
 import truck from "../assets/images/truck.png";
 
 const Home = () => {
@@ -30,12 +32,19 @@ const Home = () => {
             </button>
           </div>
         </div>
+
         <div className="w-1/2 relative">
-          <img
-            className="max-w-md self-end rounded-full animate__light SpeedInRight"
-            src={logo}
-            alt="landing.png"
-          />
+          <Animated
+            animationIn="slideInRight"
+            animationOut="fadeOut"
+            isVisible={true}
+          >
+            <img
+              className="max-w-md self-end rounded-full animate__light SpeedInRight"
+              src={logo}
+              alt="landing.png"
+            />
+          </Animated>
           <div className="absolute -right-1 top-32 flex  font-rubik flex-col py-5 px-5 rounded-md shadow-xl bg-white/70 backdrop-blur-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
             <div className="font-bold text-teal-900">Fast delivery</div>
             <div className="font-bold text-teal-900">2 hours delivery 🚀</div>
@@ -43,42 +52,46 @@ const Home = () => {
         </div>
       </div>
       <div className="w-full bg-white">
-        <div className="flex justify-center py-14 max-w-screen-xl mx-auto gap-2">
-          <div className="w-1/4 pr-8 rounded-md">
-            <img src={retail} alt="retail" className="w-10 pb-5" />
-            <h1 className="text-xl font-bold mb-1">Wholesale prices</h1>
-            <p className="text-sm">
-              Same prices as your local supermarket & no minimum order value.
-            </p>
+        <Animated
+          animationIn="fadeInRight"
+          animationOut="fadeOut"
+          isVisible={true}
+        >
+          <div className="md:flex justify-center py-14 max-w-screen-xl mx-auto gap-2">
+            <div className="w-1/4  pr-8 rounded-md">
+              <img src={retail} alt="retail" className="w-16 pb-5" />
+              <h1 className="text-xl font-bold mb-1">Wholesale prices</h1>
+              <p className="text-sm">
+                Better prices than your local market & no minimum order value.
+              </p>
+            </div>
+            <div className="w-1/4 pr-8 rounded-md">
+              <img src={delivery} alt="delivery" className="w-16 pb-5" />
+              <h1 className="text-xl font-bold mb-1">Instant delivery</h1>
+              <p className="text-sm">
+                Timing is everything. We’ll be at your door before you know it.
+              </p>
+            </div>
+            <div className="w-1/4 pr-8  rounded-md">
+              <img src={environment} alt="environment" className="w-16 pb-5" />
+              <h1 className="text-xl font-bold mb-1">Traceable source</h1>
+              <p className="text-sm">
+                We guarantee traceability hence increasing accountability and
+                safety.
+              </p>
+            </div>
+            <div className="w-1/4 pr-8  rounded-md">
+              <img src={convenience} alt="environment" className="w-16 pb-5" />
+              <h1 className="text-xl font-bold mb-1">Superstar service</h1>
+              <p className="text-sm">
+                You are not just trading partners, but friends that we happen to
+                do business with.
+              </p>
+            </div>
           </div>
-          <div className="w-1/4 pr-8 rounded-md">
-            <img src={delivery} alt="delivery" className="w-10 pb-5" />
-            <h1 className="text-xl font-bold mb-1">Instant delivery</h1>
-            <p className="text-sm">
-              Timing is everything. We’ll be at your door before you know it.
-            </p>
-          </div>
-          <div className="w-1/4 pr-8  rounded-md">
-            <img src={environment} alt="environment" className="w-10 pb-5" />
-            <h1 className="text-xl font-bold mb-1">Traceable source</h1>
-            <p className="text-sm">
-              Our business decisions and goals are towards achieving carbon
-              neutrality by 2022.
-            </p>
-          </div>
-          <div className="w-1/4 pr-8  rounded-md">
-            <img src={environment} alt="environment" className="w-10 pb-5" />
-            <h1 className="text-xl font-bold mb-1">
-              Sustainability at our core
-            </h1>
-            <p className="text-sm">
-              Our business decisions and goals are towards achieving carbon
-              neutrality by 2022.
-            </p>
-          </div>
-        </div>
+        </Animated>
       </div>
-      <div className="w-full bg-white pt-5">
+      <div className="w-full bg-white mb-20">
         <div className="flex justify-start  px-15 max-w-screen-xl mx-auto">
           <h2 className="text-3xl font-bold">How it works</h2>
         </div>
@@ -346,12 +359,12 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex w-full bg-green-100 rounded-md">
+        {/* <div className="flex w-full bg-green-100 rounded-md">
           <div className="w-1/2 flex flex-row">
             <img className="w-full" src={truck} alt="truck" />
           </div>
           <div className="w-1/2 flex flex-row"></div>
-        </div>
+        </div> */}
       </div>
     </>
   );

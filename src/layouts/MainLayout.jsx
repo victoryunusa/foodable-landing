@@ -39,7 +39,7 @@ const MainLayout = () => {
         </nav>
         <Outlet />
         <footer className="bg-teal-900 text-white">
-          <div className="px-15 py-10 max-w-screen-xl mx-auto">
+          <div className="px-15 py-10 md:max-w-screen-xl max-w-screen-md  mx-auto">
             <div className="flex w-full mb-10 h-52">
               <div className="flex-col w-1/3">
                 <div className="flex">
