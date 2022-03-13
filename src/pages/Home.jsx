@@ -9,69 +9,72 @@ import convenience from "../assets/images/badge.png";
 const Home = () => {
   return (
     <>
-      <div className="flex justify-between px-15 py-8 max-w-screen-xl gap-10 mx-auto text-white">
-        <div className="w-1/2">
-          <h1 className="text-5xl font-rubik font-bold pt-4 tracking-tight leading-tight pb-4">
-            Sourcing the <span className="text-green-500">freshest</span>{" "}
-            ingredients for your restaurant.
-          </h1>
-          <p className="leading-relaxed mt-4">
-            Join our community of over{" "}
-            <span className="font-bold text-xl">500+</span> leading caterers,
-            restaurateurs and hospitality businesses who enjoy better buying
-            power whilst ensuring fair pricing, traceability and quality across
-            all produce categories.
-          </p>
-          <div className="flex gap-x-6 items-center pt-12 mb-10">
-            <button className="p-3 w-32 border border-offset-0 border-green-500 text-green-500 hover:bg-teal-700 hover:border-teal-700 hover:text-white font-normal rounded-md">
-              Login
-            </button>
-            <button className=" bg-green-500 hover:bg-teal-700 text-white p-3 w-32 rounded-md">
-              Sign Up
-            </button>
+      <div className="w-full bg-teal-900 p-4">
+        <div className="flex flex-col-reverse md:flex md:flex-row justify-between  px-15 py-8 max-w-screen-xl gap-10 mx-auto text-white">
+          <div className="md:w-1/2">
+            <h1 className="text-3xl md:text-5xl font-rubik font-bold pt-4 md:tracking-tight md:leading-tight pb-4">
+              Sourcing the <span className="text-green-500">freshest</span>{" "}
+              ingredients for your restaurant.
+            </h1>
+            <p className="leading-relaxed mt-4">
+              Join our community of over{" "}
+              <span className="font-bold text-xl">500+</span> leading caterers,
+              restaurateurs and hospitality businesses who enjoy better buying
+              power whilst ensuring fair pricing, traceability and quality
+              across all produce categories.
+            </p>
+            <div className="flex gap-x-6 items-center pt-12 mb-10">
+              <button className="p-3 w-32 border border-offset-0 border-green-500 text-green-500 hover:bg-teal-700 hover:border-teal-700 hover:text-white font-normal rounded-md">
+                Login
+              </button>
+              <button className=" bg-green-500 hover:bg-teal-700 text-white p-3 w-32 rounded-md">
+                Sign Up
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div className="w-1/2 relative">
-          <Animated
-            animationIn="slideInRight"
-            animationOut="fadeOut"
-            isVisible={true}
-          >
-            <img
-              className="max-w-md self-end rounded-full animate__light SpeedInRight"
-              src={logo}
-              alt="landing.png"
-            />
-          </Animated>
-          <div className="absolute -right-1 top-32 flex  font-rubik flex-col py-5 px-5 rounded-md shadow-xl bg-white/70 backdrop-blur-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-            <div className="font-bold text-teal-900">Fast delivery</div>
-            <div className="font-bold text-teal-900">2 hours delivery 🚀</div>
+          <div className="md:w-1/2 relative">
+            <Animated
+              animationIn="slideInRight"
+              animationOut="fadeOut"
+              isVisible={true}
+            >
+              <img
+                className="max-w-8 md:max-w-md self-end rounded-full"
+                src={logo}
+                alt="landing.png"
+              />
+            </Animated>
+            <div className="absolute -right-1 top-32 flex  font-rubik flex-col py-5 px-5 rounded-md shadow-xl bg-white/70 backdrop-blur-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+              <div className="font-bold text-teal-900">Fast delivery</div>
+              <div className="font-bold text-teal-900">2 hours delivery 🚀</div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="w-full bg-white">
+
+      <div className="w-full bg-white p-4">
         <Animated
           animationIn="fadeInRight"
           animationOut="fadeOut"
           isVisible={true}
         >
-          <div className="md:flex justify-center py-14 max-w-screen-xl mx-auto gap-2">
-            <div className="w-1/4  pr-8 rounded-md">
+          <div className="md:flex md:flex-row flex flex-col justify-center py-14 max-w-screen-xl mx-auto gap-2 p-2.5">
+            <div className="md:w-1/4  pr-8 rounded-md">
               <img src={retail} alt="retail" className="w-16 pb-5" />
               <h1 className="text-xl font-bold mb-1">Wholesale prices</h1>
               <p className="text-sm">
                 Better prices than your local market & no minimum order value.
               </p>
             </div>
-            <div className="w-1/4 pr-8 rounded-md">
+            <div className="md:w-1/4 pr-8 rounded-md">
               <img src={delivery} alt="delivery" className="w-16 pb-5" />
               <h1 className="text-xl font-bold mb-1">Instant delivery</h1>
               <p className="text-sm">
                 Timing is everything. We’ll be at your door before you know it.
               </p>
             </div>
-            <div className="w-1/4 pr-8  rounded-md">
+            <div className="md:w-1/4 pr-8  rounded-md">
               <img src={environment} alt="environment" className="w-16 pb-5" />
               <h1 className="text-xl font-bold mb-1">Traceable source</h1>
               <p className="text-sm">
@@ -79,7 +82,7 @@ const Home = () => {
                 safety.
               </p>
             </div>
-            <div className="w-1/4 pr-8  rounded-md">
+            <div className="md:w-1/4 pr-8  rounded-md">
               <img src={convenience} alt="environment" className="w-16 pb-5" />
               <h1 className="text-xl font-bold mb-1">Superstar service</h1>
               <p className="text-sm">
@@ -90,12 +93,12 @@ const Home = () => {
           </div>
         </Animated>
       </div>
-      <div className="w-full bg-white mb-20">
+      <div className="w-full bg-white p-4">
         <div className="flex justify-start  px-15 max-w-screen-xl mx-auto">
-          <h2 className="text-3xl font-bold">How it works</h2>
+          <h2 className="text-2xl md:text-3xl font-bold">How it works</h2>
         </div>
-        <div className="flex justify-center  px-15 py-8 max-w-screen-xl mx-auto gap-5">
-          <div className="w-2/3 flex-col">
+        <div className="md:flex justify-center  px-15 py-8 max-w-screen-xl mx-auto gap-5">
+          <div className="w-full md:w-2/3 flex-col">
             <div className="flex flex-row">
               <div className="w-1/2 flex bg-green-100 items-center justify-center p-10 rounded-md">
                 <svg
@@ -265,7 +268,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/3 bg-green-100 flex flex-col justify-center  items-center p-10 rounded-md">
+          <div className="w-full mt-5 md:mt-0 md:w-1/3 bg-green-100 flex flex-col justify-center  items-center p-10 rounded-md">
             <svg
               className="w-52 h-52 text-teal-900"
               viewBox="0 0 24 24"
