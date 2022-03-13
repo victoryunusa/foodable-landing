@@ -5,12 +5,12 @@ import Header from "../components/Header";
 
 const MainLayout = () => {
   return (
-    <div className="min-w-full min-h-full font-open text-neutral-700">
+    <div className="min-w-screen m-0 p-0 font-open text-neutral-700 overflow-x-hidden">
       <div className="bg-teal-900 p-4">
         <Header />
       </div>
       <Outlet />
-      <div className="min-h-full bg-teal-900">
+      <div className="bg-teal-900">
         <Footer />
       </div>
     </div>

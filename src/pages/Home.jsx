@@ -9,7 +9,7 @@ import convenience from "../assets/images/badge.png";
 const Home = () => {
   return (
     <>
-      <div className="w-full bg-teal-900 p-4">
+      <div className="bg-teal-900 p-4">
         <div className="flex flex-col-reverse md:flex md:flex-row justify-between  px-15 py-8 max-w-screen-xl gap-10 mx-auto text-white">
           <div className="md:w-1/2">
             <h1 className="text-3xl md:text-5xl font-rubik font-bold pt-4 md:tracking-tight md:leading-tight pb-4">
@@ -53,7 +53,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="w-full bg-white p-4">
+      <div className=" bg-white p-4">
         <Animated
           animationIn="fadeInRight"
           animationOut="fadeOut"
@@ -93,12 +93,12 @@ const Home = () => {
           </div>
         </Animated>
       </div>
-      <div className="w-full bg-white p-4">
+      <div className=" bg-white p-4">
         <div className="flex justify-start  px-15 max-w-screen-xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold">How it works</h2>
         </div>
         <div className="md:flex justify-center  px-15 py-8 max-w-screen-xl mx-auto gap-5">
-          <div className="w-full md:w-2/3 flex-col">
+          <div className=" md:w-2/3 flex-col">
             <div className="flex flex-row">
               <div className="w-1/2 flex bg-green-100 items-center justify-center p-10 rounded-md">
                 <svg
@@ -268,7 +268,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="w-full mt-5 md:mt-0 md:w-1/3 bg-green-100 flex flex-col justify-center  items-center p-10 rounded-md">
+          <div className=" mt-5 md:mt-0 md:w-1/3 bg-green-100 flex flex-col justify-center  items-center p-10 rounded-md">
             <svg
               className="w-52 h-52 text-teal-900"
               viewBox="0 0 24 24"
@@ -361,9 +361,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* <div className="flex w-full bg-green-100 rounded-md">
+        {/* <div className="flex  bg-green-100 rounded-md">
           <div className="w-1/2 flex flex-row">
-            <img className="w-full" src={truck} alt="truck" />
+            <img className="" src={truck} alt="truck" />
           </div>
           <div className="w-1/2 flex flex-row"></div>
         </div> */}
