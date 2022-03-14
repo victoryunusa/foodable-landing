@@ -59,30 +59,30 @@ const Home = () => {
           animationOut="fadeOut"
           isVisible={true}
         >
-          <div className="md:flex md:flex-row flex flex-col justify-center py-14 max-w-screen-xl mx-auto gap-2 p-2.5">
-            <div className="md:w-1/4 mb-8 md:mb-0  pr-8 rounded-md">
-              <img src={retail} alt="retail" className="w-12 md:w-16 pb-1" />
+          <div className="md:flex md:flex-row flex flex-col justify-center py-8 max-w-screen-xl mx-auto gap-5 p-2.5">
+            <div className="md:w-1/4 mb-8 md:mb-0  p-4 rounded-md">
+              <img src={retail} alt="retail" className="w-12 md:w-16 pb-2" />
               <h1 className="text-xl font-bold mb-1">Wholesale prices</h1>
               <p className="text-sm">
                 Better prices than your local market & no minimum order value.
               </p>
             </div>
-            <div className="md:w-1/4 mb-8 md:mb-0 pr-8 rounded-md">
+            <div className="md:w-1/4 mb-8 md:mb-0 p-5 rounded-md">
               <img
                 src={delivery}
                 alt="delivery"
-                className="w-12 md:w-16 pb-1"
+                className="w-12 md:w-16 pb-2"
               />
               <h1 className="text-xl font-bold mb-1">Instant delivery</h1>
               <p className="text-sm">
                 Timing is everything. We’ll be at your door before you know it.
               </p>
             </div>
-            <div className="md:w-1/4 mb-8 md:mb-0 pr-8  rounded-md">
+            <div className="md:w-1/4 mb-8 md:mb-0 p-5 rounded-md">
               <img
                 src={environment}
                 alt="environment"
-                className="w-12 md:w-16 pb-1"
+                className="w-12 md:w-16 pb-2"
               />
               <h1 className="text-xl font-bold mb-1">Traceable source</h1>
               <p className="text-sm">
@@ -90,16 +90,16 @@ const Home = () => {
                 safety.
               </p>
             </div>
-            <div className="md:w-1/4 mb-8 md:mb-0 pr-8  rounded-md">
+            <div className="md:w-1/4 mb-8 md:mb-0 p-5 rounded-md">
               <img
                 src={convenience}
                 alt="environment"
-                className="w-12 md:w-16 pb-1"
+                className="w-12 md:w-16 pb-2"
               />
               <h1 className="text-xl font-bold mb-1">Superstar service</h1>
               <p className="text-sm">
-                You are not just trading partners, but friends that we happen to
-                do business with.
+                More than a trading partner, we are friends that we happen to do
+                business.
               </p>
             </div>
           </div>
