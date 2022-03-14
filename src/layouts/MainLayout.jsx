@@ -5,7 +5,7 @@ import Header from "../components/Header";
 
 const MainLayout = () => {
   return (
-    <div className="min-w-screen m-0 p-0 font-open text-neutral-700 overflow-x-hidden">
+    <div className="min-w-screen m-0 p-0 antialiased font-open text-neutral-700 overflow-x-hidden">
       <div className="bg-teal-900 p-4">
         <Header />
       </div>

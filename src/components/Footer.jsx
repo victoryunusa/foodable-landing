@@ -74,7 +74,7 @@ const Footer = () => {
         </div>
         <div className="flex justify-between pt-4">
           <div>
-            <p className="text-sm">© Foodable by Agrilet 2022</p>
+            <p className="text-sm">© Foodable 2022</p>
           </div>
           <div>
             <p className="text-sm">

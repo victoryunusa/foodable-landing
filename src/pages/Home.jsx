@@ -59,15 +59,15 @@ const Home = () => {
           animationOut="fadeOut"
           isVisible={true}
         >
-          <div className="md:flex md:flex-row flex flex-col justify-center py-8 max-w-screen-xl mx-auto gap-5 p-2.5">
-            <div className="md:w-1/4 mb-8 md:mb-0  p-4 rounded-md">
+          <div className="md:flex md:flex-row flex flex-col justify-center py-8 max-w-screen-xl mx-auto gap-2">
+            <div className="md:w-1/4 mb-7 md:mb-0 rounded-md">
               <img src={retail} alt="retail" className="w-12 md:w-16 pb-2" />
               <h1 className="text-xl font-bold mb-1">Wholesale prices</h1>
               <p className="text-sm">
                 Better prices than your local market & no minimum order value.
               </p>
             </div>
-            <div className="md:w-1/4 mb-8 md:mb-0 p-5 rounded-md">
+            <div className="md:w-1/4 mb-7 md:mb-0 rounded-md">
               <img
                 src={delivery}
                 alt="delivery"
@@ -78,7 +78,7 @@ const Home = () => {
                 Timing is everything. We’ll be at your door before you know it.
               </p>
             </div>
-            <div className="md:w-1/4 mb-8 md:mb-0 p-5 rounded-md">
+            <div className="md:w-1/4 mb-7 md:mb-0 rounded-md">
               <img
                 src={environment}
                 alt="environment"
@@ -90,7 +90,7 @@ const Home = () => {
                 safety.
               </p>
             </div>
-            <div className="md:w-1/4 mb-8 md:mb-0 p-5 rounded-md">
+            <div className="md:w-1/4 mb-4 md:mb-0 rounded-md">
               <img
                 src={convenience}
                 alt="environment"
@@ -188,7 +188,7 @@ const Home = () => {
               </div>
               <div className="w-1/2 flex flex-col justify-center items-center p-10">
                 <h1 className="text-xl font-bold">Add products to cart</h1>
-                <p className="">
+                <p className="text-sm">
                   Sign in and collect all your produce to cart.
                 </p>
               </div>
@@ -196,7 +196,7 @@ const Home = () => {
             <div className="flex flex-row">
               <div className="w-1/2 flex flex-col justify-center items-center pl-0 p-7">
                 <h1 className="text-xl font-bold">Continue to payment</h1>
-                <p className="">
+                <p className="text-sm">
                   Choose to pay now, pay on delivery or pay later.
                 </p>
               </div>
@@ -366,8 +366,8 @@ const Home = () => {
             </svg>
             <div className="flex flex-col justify-start items-center">
               <h1 className="font-bold text-xl">Wait for your groceries</h1>
-              <p className="tracking-tight">
-                We'll deliver as early as possible or according to your date
+              <p className="text-sm">
+                We'll deliver as early as possible and according to your date
                 preferences
               </p>
             </div>
