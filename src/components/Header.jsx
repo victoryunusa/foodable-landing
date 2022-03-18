@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [active, setActive] = useState(false);
-
+  const onClick = () => {
+    window.open("https://app.foodable.ng");
+  };
   const onClose = () => {
     setActive(!active);
   };
@@ -79,13 +81,12 @@ const Header = () => {
             </li>
           </ul>
 
-          <Link
-            to="https://app.foodable.ng"
-            target="_blank"
+          <button
+            onClick={onClick}
             className="flex justify-center items-center bg-green-500 hover:bg-teal-700 hover:shadow-lg text-white pt-2.5 py-3 px-3 w-32 rounded-md"
           >
             Order now
-          </Link>
+          </button>
         </nav>
       </div>
     </header>
