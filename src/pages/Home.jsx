@@ -7,6 +7,14 @@ import environment from "../assets/images/barcode-scanner (1).png";
 import convenience from "../assets/images/badge.png";
 
 const Home = () => {
+  const login = () => {
+    window.open("https://app.foodable.ng");
+  };
+
+  const register = () => {
+    window.open("https://app.foodable.ng/auth/register");
+  };
+
   return (
     <>
       <div className={`bg-teal-900 p-4`}>
@@ -24,10 +32,16 @@ const Home = () => {
               across all produce categories.
             </p>
             <div className="flex gap-x-6 items-center pt-12 mb-10">
-              <button className="p-3 w-32 border border-offset-0 border-green-500 text-green-500 hover:bg-teal-700 hover:border-teal-700 hover:text-white font-normal rounded-md">
+              <button
+                onClick={login}
+                className="p-3 w-32 border border-offset-0 border-green-500 font-semibold text-green-500 hover:bg-teal-700 hover:border-teal-700 hover:text-white rounded-md"
+              >
                 Login
               </button>
-              <button className=" bg-green-500 hover:bg-teal-700 text-white p-3 w-32 rounded-md">
+              <button
+                onClick={register}
+                className=" bg-green-500 hover:bg-teal-700 text-white p-3 w-32 font-semibold rounded-md"
+              >
                 Sign Up
               </button>
             </div>

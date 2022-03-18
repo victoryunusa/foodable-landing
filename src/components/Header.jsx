@@ -83,7 +83,7 @@ const Header = () => {
 
           <button
             onClick={onClick}
-            className="flex justify-center items-center bg-green-500 hover:bg-teal-700 hover:shadow-lg text-white pt-2.5 py-3 px-3 w-32 rounded-md"
+            className="flex justify-center items-center font-semibold bg-green-500 hover:bg-teal-700 hover:shadow-lg text-white pt-2.5 py-3 px-3 w-32 rounded-md"
           >
             Order now
           </button>
