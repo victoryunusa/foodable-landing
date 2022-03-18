@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [active, setActive] = useState(false);
-  const onClick = () => {
+
+  const onClose = () => {
     setActive(!active);
   };
+
   return (
     <header className="relative pt-2.5">
       <div className="max-w-7xl mx-auto flex items-center justify-between text-white">
@@ -14,7 +16,7 @@ const Header = () => {
             foodabl<span className="text-green-500">e</span>
           </Link>
         </div>
-        <div onClick={onClick} className="md:hidden cursor-pointer">
+        <div onClick={onClose} className="md:hidden cursor-pointer">
           <svg
             className="w-8 h-8"
             viewBox="0 0 24 24"
@@ -77,9 +79,13 @@ const Header = () => {
             </li>
           </ul>
 
-          <button className="flex justify-center items-center bg-green-500 hover:bg-teal-700 hover:shadow-lg text-white pt-2.5 py-3 px-3 w-32 rounded-md">
+          <Link
+            to="https://app.foodable.ng"
+            target="_blank"
+            className="flex justify-center items-center bg-green-500 hover:bg-teal-700 hover:shadow-lg text-white pt-2.5 py-3 px-3 w-32 rounded-md"
+          >
             Order now
-          </button>
+          </Link>
         </nav>
       </div>
     </header>

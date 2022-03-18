@@ -9,7 +9,7 @@ import convenience from "../assets/images/badge.png";
 const Home = () => {
   return (
     <>
-      <div className="bg-teal-900 p-4">
+      <div className={`bg-teal-900 p-4`}>
         <div className="flex flex-col-reverse md:flex md:flex-row justify-between  px-15 py-8 max-w-screen-xl gap-10 mx-auto text-white">
           <div className="md:w-1/2">
             <h1 className="text-3xl md:text-5xl font-rubik font-bold pt-4 md:tracking-tight md:leading-tight pb-4">
