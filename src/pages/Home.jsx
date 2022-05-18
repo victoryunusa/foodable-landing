@@ -1,69 +1,91 @@
 import React from "react";
+import { Typewriter } from "react-simple-typewriter";
+import { motion } from "framer-motion";
 import { Animated } from "react-animated-css";
-import logo from "../assets/images/grocery.jpg";
 import retail from "../assets/images/money.png";
 import delivery from "../assets/images/delivery-bike.png";
 import environment from "../assets/images/barcode-scanner (1).png";
-import convenience from "../assets/images/badge.png";
+import android from "../assets/images/playstore.svg";
+import apple from "../assets/images/apple-logo.svg";
+import portrait from "../assets/images/portrait.jpeg";
 
 const Home = () => {
-  const login = () => {
-    window.open("https://app.foodable.ng");
-  };
-
   const register = () => {
     window.open("https://app.foodable.ng/auth/register");
   };
 
   return (
     <>
-      <div className={`bg-teal-900 p-4`}>
-        <div className="flex flex-col-reverse md:flex md:flex-row justify-between  px-15 py-8 max-w-screen-xl gap-10 mx-auto text-white">
-          <div className="md:w-1/2">
-            <h1 className="text-3xl md:text-5xl font-rubik font-bold pt-4 md:tracking-tight md:leading-tight pb-4">
-              Sourcing the <span className="text-green-500">freshest</span>{" "}
-              ingredients for your restaurant.
+      <div className={`bg-white p-4`}>
+        <div className="flex flex-col-reverse md:flex md:flex-row justify-between  px-15 py-8 max-w-screen-xl gap-10 mx-auto text-black pt-5 md:pt-10 ">
+          <div className="md:w-3/5 mb-24">
+            <h1 className="text-3xl md:text-7xl font-syne font-semibold tracking-tight leading-snug md:leading-tight mt-0 md:mt-20">
+              Quality{" "}
+              <span className="text-green-500">
+                {/* Style will be inherited from the parent element */}
+                <Typewriter
+                  words={[
+                    "Ingredients",
+                    "Meat",
+                    "Fish",
+                    "Veggies",
+                    "Fruits",
+                    "Drinks",
+                  ]}
+                  loop={0}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={60}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                />
+              </span>
             </h1>
-            <p className="leading-relaxed mt-4">
+            <h1 className="text-3xl md:text-7xl font-syne font-semibold tracking-wide leading-snug md:leading-tight pb-2">
+              Delivered to Your Kitchen.
+            </h1>
+            <p className="leading-relaxed mt-2 text-lg">
               Join our community of over{" "}
               <span className="font-bold text-xl">500+</span> leading caterers,
               restaurateurs and hospitality businesses who enjoy better buying
               power whilst ensuring fair pricing, traceability and quality
               across all produce categories.
             </p>
-            <div className="flex gap-x-6 items-center pt-12 mb-10">
-              <button
-                onClick={login}
-                className="p-3 w-32 border border-offset-0 border-green-500 font-semibold text-green-500 hover:bg-teal-700 hover:border-teal-700 hover:text-white rounded-md"
-              >
-                Login
+            <div className="flex flex-row gap-2 md:gap-7 justify-start pt-10">
+              <button class="bg-white text-black border border-black font-medium p-3 rounded-md inline-flex items-center w-44">
+                <img className="h-6 w-6" src={apple} alt="apple" />{" "}
+                <span className="text-base ml-2">Get on iPhone</span>
               </button>
+              <button class="bg-white text-black border border-black font-medium p-3 rounded-md inline-flex items-center w-44">
+                <img className="h-6 w-6" src={android} alt="android" />{" "}
+                <span className="text-base ml-2">Get on Android</span>
+              </button>
+            </div>
+            <div className="flex gap-x-6 items-center mt-16 mb-10">
               <button
                 onClick={register}
-                className=" bg-green-500 hover:bg-teal-700 text-white p-3 w-32 font-semibold rounded-md"
+                className="bg-black hover:bg-zinc-900 text-white p-3 w-full md:w-96 font-semibold rounded-md"
               >
-                Sign Up
+                Become a rider
               </button>
             </div>
           </div>
 
-          <div className="md:w-1/2 relative">
-            <Animated
-              animationIn="slideInRight"
-              animationOut="fadeOut"
-              isVisible={true}
-            >
-              <img
-                className="max-w-8 md:max-w-md self-end rounded-full"
-                src={logo}
-                alt="landing.png"
-              />
-            </Animated>
-            <div className="absolute -right-1 top-32 flex  font-rubik flex-col py-5 px-5 rounded-md shadow-xl bg-white/70 backdrop-blur-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-              <div className="font-bold text-teal-900">Fast delivery</div>
-              <div className="font-bold text-teal-900">2 hours delivery 🚀</div>
+          <motion.div
+            className="md:w-2/5 relative"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <img
+              className="self-end rounded-2xl"
+              src={portrait}
+              alt="landing.png"
+            />
+            <div className="absolute -right-1 top-32 flex  font-rubik flex-col py-5 px-5 rounded-md shadow-xl bg-white/50 backdrop-blur-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+              <div className="font-bold text-black">Fast delivery</div>
+              <div className="font-bold text-black">2 hours delivery 🚀</div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 
@@ -73,11 +95,11 @@ const Home = () => {
           animationOut="fadeOut"
           isVisible={true}
         >
-          <div className="md:flex md:flex-row flex flex-col justify-center py-8 max-w-screen-xl mx-auto gap-2">
+          <div className="md:flex md:flex-row flex flex-col justify-between py-8 max-w-screen-xl mx-auto gap-2">
             <div className="md:w-1/4 mb-7 md:mb-0 rounded-md">
               <img src={retail} alt="retail" className="w-12 md:w-16 pb-2" />
               <h1 className="text-xl font-bold mb-1">Wholesale prices</h1>
-              <p className="text-sm">
+              <p className="text-lg">
                 Better prices than your local market & no minimum order value.
               </p>
             </div>
@@ -88,7 +110,7 @@ const Home = () => {
                 className="w-12 md:w-16 pb-2"
               />
               <h1 className="text-xl font-bold mb-1">Instant delivery</h1>
-              <p className="text-sm">
+              <p className="text-lg">
                 Timing is everything. We’ll be at your door before you know it.
               </p>
             </div>
@@ -99,36 +121,28 @@ const Home = () => {
                 className="w-12 md:w-16 pb-2"
               />
               <h1 className="text-xl font-bold mb-1">Traceable source</h1>
-              <p className="text-sm">
+              <p className="text-lg">
                 We guarantee traceability hence increasing accountability and
                 safety.
-              </p>
-            </div>
-            <div className="md:w-1/4 mb-4 md:mb-0 rounded-md">
-              <img
-                src={convenience}
-                alt="environment"
-                className="w-12 md:w-16 pb-2"
-              />
-              <h1 className="text-xl font-bold mb-1">Superstar service</h1>
-              <p className="text-sm">
-                More than a trading partner, we are friends that we happen to do
-                business.
               </p>
             </div>
           </div>
         </Animated>
       </div>
       <div className=" bg-white p-4">
-        <div className="flex justify-start  px-15 max-w-screen-xl mx-auto">
+        <div className="flex justify-between  px-15 max-w-screen-xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold">How it works</h2>
         </div>
         <div className="md:flex justify-center  px-15 py-8 max-w-screen-xl mx-auto gap-5">
           <div className=" md:w-2/3 flex-col">
             <div className="flex flex-row">
-              <div className="w-1/2 flex bg-green-100 items-center justify-center p-10 rounded-md">
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="w-1/2 flex bg-gray-100 items-center justify-center p-10 rounded-md"
+              >
                 <svg
-                  className="w-52 h-52 text-teal-900"
+                  className="w-52 h-52 text-black"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -171,7 +185,7 @@ const Home = () => {
                     stroke-linecap="round"
                   />
                 </svg>
-              </div>
+              </motion.div>
               <div className="relative">
                 <div className="absolute flex items-center inset-y-0 -right-5">
                   <svg
@@ -214,7 +228,7 @@ const Home = () => {
                   Choose to pay now, pay on delivery or pay later.
                 </p>
               </div>
-              <div className="relative">
+              <motion.div className="relative">
                 <div className="absolute flex items-center inset-y-0 -right-5">
                   <svg
                     className="w-12"
@@ -241,10 +255,10 @@ const Home = () => {
                     />
                   </svg>
                 </div>
-              </div>
-              <div className="w-1/2 flex bg-green-100 justify-center items-center p-10 rounded-md">
+              </motion.div>
+              <div className="w-1/2 flex bg-gray-100 justify-center items-center p-10 rounded-md">
                 <svg
-                  className="w-52 h-52 text-teal-900"
+                  className="w-52 h-52 text-black"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -294,9 +308,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className=" mt-5 md:mt-0 md:w-1/3 bg-green-100 flex flex-col justify-center  items-center p-10 rounded-md">
+          <div className=" mt-5 md:mt-0 md:w-1/3 bg-gray-100 flex flex-col justify-center  items-center p-10 rounded-md">
             <svg
-              className="w-52 h-52 text-teal-900"
+              className="w-52 h-52 text-black"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

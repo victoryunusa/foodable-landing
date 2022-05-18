@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const prod_year = new Date();
   return (
     <footer className="relative text-white p-4">
       <div className="px-15 py-10 max-w-screen-xl mx-auto">
@@ -10,7 +11,7 @@ const Footer = () => {
             <div className="">
               <Link
                 to="/"
-                className="text-2xl tracking-wide font-bold font-rubik"
+                className="text-3xl tracking-wide font-bold font-alata"
               >
                 foodabl<span className="text-green-500 ">e</span>
               </Link>
@@ -74,7 +75,7 @@ const Footer = () => {
         </div>
         <div className="flex justify-between pt-4">
           <div>
-            <p className="text-sm">© Foodable 2022</p>
+            <p className="text-sm">© Foodable {prod_year.getFullYear()}</p>
           </div>
           <div>
             <p className="text-sm">

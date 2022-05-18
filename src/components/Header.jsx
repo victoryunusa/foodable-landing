@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [active, setActive] = useState(false);
   const onClick = () => {
-    window.open("https://app.foodable.ng");
+    window.open("https://foodable.ng");
   };
   const onClose = () => {
     setActive(!active);
@@ -12,9 +12,9 @@ const Header = () => {
 
   return (
     <header className="relative pt-2.5">
-      <div className="max-w-7xl mx-auto flex items-center justify-between text-white">
+      <div className="max-w-7xl mx-auto flex items-center justify-between text-black">
         <div className="w-14">
-          <Link to="/" className="text-2xl font-rubik tracking-wide font-bold">
+          <Link to="/" className="text-3xl font-alata tracking-wide font-bold">
             foodabl<span className="text-green-500">e</span>
           </Link>
         </div>
@@ -50,7 +50,7 @@ const Header = () => {
             <li className="link-none">
               <Link
                 to="/"
-                className="flex w-full px-2.5 text-base font-normal hover:text-green-500"
+                className="flex w-full px-2.5 text-base  font-medium hover:text-green-500"
               >
                 Home
               </Link>
@@ -58,23 +58,23 @@ const Header = () => {
             <li className="link-none">
               <Link
                 to="/"
-                className="flex w-full px-2.5 text-base font-normal hover:text-green-500"
+                className="flex w-full px-2.5 text-base font-medium hover:text-green-500"
               >
                 Business
               </Link>
             </li>
             <li className="link-none ml-0">
               <Link
-                to="/"
-                className="flex w-full px-2.5 text-base font-normal hover:text-green-500"
+                to="/riders"
+                className="flex w-full px-2.5 text-base font-medium hover:text-green-500"
               >
-                Suppliers
+                Riders
               </Link>
             </li>
             <li className="link-none">
               <Link
                 to="/"
-                className="flex w-full px-2.5 text-base font-normal hover:text-green-500"
+                className="flex w-full px-2.5 text-base font-medium hover:text-green-500"
               >
                 Contact
               </Link>
@@ -83,9 +83,16 @@ const Header = () => {
 
           <button
             onClick={onClick}
-            className="flex justify-center items-center font-semibold bg-green-500 hover:bg-teal-700 hover:shadow-lg text-white pt-2.5 py-3 px-3 w-32 rounded-md"
+            className="flex justify-center items-center font-semibold bg-white text-black border border-black hover:border-green-500 hover:text-green-500 pt-2.5 py-3 px-3 w-32 rounded-md"
           >
-            Order now
+            Login
+          </button>
+
+          <button
+            onClick={onClick}
+            className="flex justify-center items-center font-semibold bg-black hover:bg-green-500 text-white pt-2.5 py-3 px-3 w-32 rounded-md"
+          >
+            Register
           </button>
         </nav>
       </div>
