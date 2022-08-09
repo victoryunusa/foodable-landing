@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import logo from "../assets/images/foodable-logo.png";
+
 const Header = () => {
   const [active, setActive] = useState(false);
   const onClick = () => {
@@ -13,9 +15,9 @@ const Header = () => {
   return (
     <header className="relative pt-2.5">
       <div className="max-w-7xl mx-auto flex items-center justify-between text-black">
-        <div className="w-14">
+        <div className="">
           <Link to="/" className="text-3xl font-alata tracking-wide font-bold">
-            foodabl<span className="text-green-500">e</span>
+            <img className="w-44" src={logo} alt="logo" />
           </Link>
         </div>
         <div onClick={onClose} className="md:hidden cursor-pointer">
