@@ -7,7 +7,7 @@ import delivery from "../assets/images/delivery-bike.png";
 import environment from "../assets/images/barcode-scanner (1).png";
 import android from "../assets/images/playstore.svg";
 import apple from "../assets/images/apple-logo.svg";
-import portrait from "../assets/images/portrait.jpeg";
+import portrait from "../assets/images/grocery.jpg";
 
 const Home = () => {
   const register = () => {
@@ -19,8 +19,8 @@ const Home = () => {
       <div className={`bg-white p-4`}>
         <div className="flex flex-col-reverse md:flex md:flex-row justify-between  px-15 py-8 max-w-screen-xl gap-10 mx-auto text-black pt-5 md:pt-10 ">
           <div className="md:w-3/5 mb-24">
-            <h1 className="text-3xl md:text-7xl font-syne font-semibold tracking-tight leading-snug md:leading-tight mt-0 md:mt-20">
-              Quality{" "}
+            <h1 className="text-3xl md:text-7xl font-fredoka font-normal tracking-wide leading-snug md:leading-tight mt-0 md:mt-20">
+              Fresh{" "}
               <span className="text-green-500">
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
@@ -41,8 +41,8 @@ const Home = () => {
                 />
               </span>
             </h1>
-            <h1 className="text-3xl md:text-7xl font-syne font-semibold tracking-wide leading-snug md:leading-tight pb-2">
-              Delivered to Your Kitchen.
+            <h1 className="text-3xl md:text-7xl font-fredoka font-normal tracking-wide leading-snug md:leading-tight pb-2">
+              Delivered to Your Kitchen in minutes.
             </h1>
             <p className="leading-relaxed mt-2 text-md">
               Join our community of over{" "}
@@ -72,19 +72,15 @@ const Home = () => {
           </div>
 
           <motion.div
-            className="md:w-2/5 relative"
+            className="md:w-2/5"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
             <img
-              className="self-end rounded-2xl"
+              className="self-end rounded-full h-4/5"
               src={portrait}
               alt="landing.png"
             />
-            <div className="absolute -right-1 top-32 flex  font-rubik flex-col py-5 px-5 rounded-md shadow-xl bg-white/50 backdrop-blur-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-              <div className="font-bold text-black">Fast delivery</div>
-              <div className="font-bold text-black">2 hours delivery 🚀</div>
-            </div>
           </motion.div>
         </div>
       </div>

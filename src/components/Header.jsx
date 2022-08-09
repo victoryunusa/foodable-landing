@@ -48,7 +48,7 @@ const Header = () => {
        md:static md:w-auto md:flex-row md:flex md:space-x-5
       `}
         >
-          <ul className="md:flex-row md:flex items-center md:space-x-8">
+          <ul className="md:flex-row md:flex items-center md:space-x-2">
             <li className="link-none">
               <Link
                 to="/"
@@ -62,7 +62,7 @@ const Header = () => {
                 to="/"
                 className="flex w-full px-2.5 text-base font-medium hover:text-green-500"
               >
-                Business
+                Restaurants
               </Link>
             </li>
             <li className="link-none ml-0">
@@ -85,14 +85,14 @@ const Header = () => {
 
           <button
             onClick={onClick}
-            className="flex justify-center items-center font-semibold bg-white text-black border border-black hover:border-green-500 hover:text-green-500 pt-2.5 py-3 px-3 w-32 rounded-md"
+            className="flex justify-center items-center text-base font-medium bg-white text-black border border-black hover:border-green-500 hover:text-green-500 py-2 px-2 w-32 rounded-md"
           >
             Login
           </button>
 
           <button
             onClick={onClick}
-            className="flex justify-center items-center font-semibold bg-black hover:bg-green-500 text-white pt-2.5 py-3 px-3 w-32 rounded-md"
+            className="flex justify-center items-center font-medium text-base bg-black hover:bg-green-500 text-white pt-2.5 py-3 px-3 w-32 rounded-md"
           >
             Register
           </button>
