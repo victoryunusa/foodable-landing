@@ -44,9 +44,9 @@ const Home = () => {
             <h1 className="text-3xl md:text-7xl font-syne font-semibold tracking-wide leading-snug md:leading-tight pb-2">
               Delivered to Your Kitchen.
             </h1>
-            <p className="leading-relaxed mt-2 text-lg">
+            <p className="leading-relaxed mt-2 text-md">
               Join our community of over{" "}
-              <span className="font-bold text-xl">500+</span> leading caterers,
+              <span className="font-bold text-md">500+</span> leading caterers,
               restaurateurs and hospitality businesses who enjoy better buying
               power whilst ensuring fair pricing, traceability and quality
               across all produce categories.
@@ -54,11 +54,11 @@ const Home = () => {
             <div className="flex flex-row gap-2 md:gap-7 justify-start pt-10">
               <button class="bg-white text-black border border-black font-medium p-3 rounded-md inline-flex items-center w-44">
                 <img className="h-6 w-6" src={apple} alt="apple" />{" "}
-                <span className="text-base ml-2">Get on iPhone</span>
+                <span className="text-sm ml-2">Get on iPhone</span>
               </button>
               <button class="bg-white text-black border border-black font-medium p-3 rounded-md inline-flex items-center w-44">
                 <img className="h-6 w-6" src={android} alt="android" />{" "}
-                <span className="text-base ml-2">Get on Android</span>
+                <span className="text-sm ml-2">Get on Android</span>
               </button>
             </div>
             <div className="flex gap-x-6 items-center mt-16 mb-10">
@@ -99,7 +99,7 @@ const Home = () => {
             <div className="md:w-1/4 mb-7 md:mb-0 rounded-md">
               <img src={retail} alt="retail" className="w-12 md:w-16 pb-2" />
               <h1 className="text-xl font-bold mb-1">Wholesale prices</h1>
-              <p className="text-lg">
+              <p className="text-md">
                 Better prices than your local market & no minimum order value.
               </p>
             </div>
@@ -110,7 +110,7 @@ const Home = () => {
                 className="w-12 md:w-16 pb-2"
               />
               <h1 className="text-xl font-bold mb-1">Instant delivery</h1>
-              <p className="text-lg">
+              <p className="text-md">
                 Timing is everything. We’ll be at your door before you know it.
               </p>
             </div>
@@ -121,7 +121,7 @@ const Home = () => {
                 className="w-12 md:w-16 pb-2"
               />
               <h1 className="text-xl font-bold mb-1">Traceable source</h1>
-              <p className="text-lg">
+              <p className="text-md">
                 We guarantee traceability hence increasing accountability and
                 safety.
               </p>
@@ -216,7 +216,7 @@ const Home = () => {
               </div>
               <div className="w-1/2 flex flex-col justify-center items-center p-10">
                 <h1 className="text-xl font-bold">Add products to cart</h1>
-                <p className="text-sm">
+                <p className="text-md">
                   Sign in and collect all your produce to cart.
                 </p>
               </div>
@@ -224,7 +224,7 @@ const Home = () => {
             <div className="flex flex-row">
               <div className="w-1/2 flex flex-col justify-center items-center pl-0 p-7">
                 <h1 className="text-xl font-bold">Continue to payment</h1>
-                <p className="text-sm">
+                <p className="text-md">
                   Choose to pay now, pay on delivery or pay later.
                 </p>
               </div>
@@ -394,10 +394,7 @@ const Home = () => {
             </svg>
             <div className="flex flex-col justify-start items-center">
               <h1 className="font-bold text-xl">Wait for your groceries</h1>
-              <p className="text-sm">
-                We'll deliver as early as possible and according to your date
-                preferences
-              </p>
+              <p className="text-md">We'll deliver as early as possible.</p>
             </div>
           </div>
         </div>
