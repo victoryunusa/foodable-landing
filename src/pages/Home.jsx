@@ -7,18 +7,19 @@ import delivery from "../assets/images/delivery-bike.png";
 import environment from "../assets/images/barcode-scanner (1).png";
 import android from "../assets/images/playstore.svg";
 import apple from "../assets/images/apple-logo.svg";
-import portrait from "../assets/images/grocery.jpg";
+import portrait from "../assets/images/main-lading.png";
+import iphone from "../assets/images/iphone-1.png";
 
 const Home = () => {
   const register = () => {
-    window.open("https://app.foodable.ng/auth/register");
+    window.open("https://foodable.ng/");
   };
 
   return (
     <>
       <div className={`bg-white p-4`}>
-        <div className="flex flex-col-reverse md:flex md:flex-row justify-between  px-15 py-8 max-w-screen-xl gap-10 mx-auto text-black pt-5 md:pt-10 ">
-          <div className="md:w-3/5 mb-24">
+        <div className="flex flex-col-reverse md:flex md:flex-row justify-between  px-15 py-5 max-w-screen-xl gap-10 mx-auto text-black pt-5 md:pt-10 ">
+          <div className="md:w-3/5 mb-2">
             <h1 className="text-3xl md:text-7xl font-fredoka font-normal tracking-wide leading-snug md:leading-tight mt-0 md:mt-20">
               Fresh{" "}
               <span className="text-green-500">
@@ -44,29 +45,72 @@ const Home = () => {
             <h1 className="text-3xl md:text-7xl font-fredoka font-normal tracking-wide leading-snug md:leading-tight pb-2">
               Delivered to Your Kitchen in minutes.
             </h1>
-            <p className="leading-relaxed mt-2 text-md">
+            <p className="leading-relaxed mt-5 text-xl w-4/5">
               Join our community of over{" "}
-              <span className="font-bold text-md">500+</span> leading caterers,
+              <span className="font-bold text-md ">500+</span> leading caterers,
               restaurateurs and hospitality businesses who enjoy better buying
               power whilst ensuring fair pricing, traceability and quality
               across all produce categories.
             </p>
-            <div className="flex flex-row gap-2 md:gap-7 justify-start pt-10">
-              <button class="bg-white text-black border border-black font-medium p-3 rounded-md inline-flex items-center w-44">
-                <img className="h-6 w-6" src={apple} alt="apple" />{" "}
-                <span className="text-sm ml-2">Get on iPhone</span>
-              </button>
-              <button class="bg-white text-black border border-black font-medium p-3 rounded-md inline-flex items-center w-44">
-                <img className="h-6 w-6" src={android} alt="android" />{" "}
-                <span className="text-sm ml-2">Get on Android</span>
-              </button>
-            </div>
-            <div className="flex gap-x-6 items-center mt-16 mb-10">
+            <div className="flex flex-row gap-2 md:gap-7 justify-start mt-16">
               <button
-                onClick={register}
-                className="bg-black hover:bg-zinc-900 text-white p-3 w-full md:w-96 font-semibold rounded-md"
+                onClick={() => register()}
+                class="bg-black text-white border border-black font-medium p-3 rounded-xl inline-flex items-center w-48"
               >
-                Become a rider
+                <span className="text-sm ml-2 flex flex-row">
+                  Get started for free{" "}
+                  <svg
+                    className="w-4 ml-3"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.4297 5.93018L20.4997 12.0002L14.4297 18.0702"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3.5 12H20.33"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <button class="bg-zinc-100 text-black font-medium p-3 rounded-xl inline-flex items-center w-42">
+                <span className="text-sm ml-2 flex flex-row">
+                  Contact sales{" "}
+                  <svg
+                    className="w-4 ml-3"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.4297 5.93018L20.4997 12.0002L14.4297 18.0702"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3.5 12H20.33"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
               </button>
             </div>
           </div>
@@ -77,7 +121,7 @@ const Home = () => {
             whileTap={{ scale: 0.9 }}
           >
             <img
-              className="self-end rounded-full h-4/5"
+              className="self-end  h-full"
               src={portrait}
               alt="landing.png"
             />
@@ -85,17 +129,17 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-white p-4">
+      <div className="bg-white p-4 mb-20">
         <Animated
           animationIn="fadeInRight"
           animationOut="fadeOut"
           isVisible={true}
         >
-          <div className="md:flex md:flex-row flex flex-col justify-between py-8 max-w-screen-xl mx-auto gap-2">
+          <div className="md:flex md:flex-row flex flex-col justify-between py-2 max-w-screen-xl mx-auto gap-2">
             <div className="md:w-1/4 mb-7 md:mb-0 rounded-md">
               <img src={retail} alt="retail" className="w-12 md:w-16 pb-2" />
-              <h1 className="text-xl font-bold mb-1">Wholesale prices</h1>
-              <p className="text-md">
+              <h1 className="text-2xl font-bold mb-1">Wholesale prices</h1>
+              <p className="leading-relaxed text-md">
                 Better prices than your local market & no minimum order value.
               </p>
             </div>
@@ -105,8 +149,8 @@ const Home = () => {
                 alt="delivery"
                 className="w-12 md:w-16 pb-2"
               />
-              <h1 className="text-xl font-bold mb-1">Instant delivery</h1>
-              <p className="text-md">
+              <h1 className="text-2xl font-bold mb-1">Instant delivery</h1>
+              <p className="leading-relaxed text-md">
                 Timing is everything. We’ll be at your door before you know it.
               </p>
             </div>
@@ -116,8 +160,8 @@ const Home = () => {
                 alt="environment"
                 className="w-12 md:w-16 pb-2"
               />
-              <h1 className="text-xl font-bold mb-1">Traceable source</h1>
-              <p className="text-md">
+              <h1 className="text-2xl font-bold mb-1">Traceable source</h1>
+              <p className="leading-relaxed text-md">
                 We guarantee traceability hence increasing accountability and
                 safety.
               </p>
@@ -394,12 +438,42 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* <div className="flex  bg-green-100 rounded-md">
-          <div className="w-1/2 flex flex-row">
-            <img className="" src={truck} alt="truck" />
+        <div className="bg-white p-4">
+          <div className="md:flex justify-between max-w-screen-xl mx-auto bg-black rounded-md">
+            <div className="w-3/5">
+              <div className="p-16  justify-center align-middle">
+                <div className=" flex-column">
+                  <h1 className="font-fredoka font-normal text-4xl text-white mb-2">
+                    Stock and restock with ease
+                  </h1>
+                  <h3 className="font-normal text-lg text-white">
+                    Handle everything from making orders and approving payments,
+                    to checking balances, seeing your business performance and
+                    lots more.
+                  </h3>
+                </div>
+
+                <div className="flex flex-row gap-2 md:gap-7 justify-start pt-10">
+                  <button class="bg-white text-black border border-black font-medium p-3 rounded-xl inline-flex items-center w-42">
+                    <img className="h-6 w-6" src={apple} alt="apple" />{" "}
+                    <span className="text-sm ml-2">Get on iPhone</span>
+                  </button>
+                  <button class="bg-white text-black border border-black font-medium p-3 rounded-xl inline-flex items-center w-42">
+                    <img className="h-6 w-6" src={android} alt="android" />{" "}
+                    <span className="text-sm ml-2">Get on Android</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="w-2/5">
+              <img
+                className="self-end  w-full"
+                src={iphone}
+                alt="landing.png"
+              />
+            </div>
           </div>
-          <div className="w-1/2 flex flex-row"></div>
-        </div> */}
+        </div>
       </div>
     </>
   );

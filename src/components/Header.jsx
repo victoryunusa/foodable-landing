@@ -17,7 +17,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between text-black">
         <div className="">
           <Link to="/" className="text-3xl font-alata tracking-wide font-bold">
-            <img className="w-44" src={logo} alt="logo" />
+            <img className="w-32" src={logo} alt="logo" />
           </Link>
         </div>
         <div onClick={onClose} className="md:hidden cursor-pointer">
@@ -52,15 +52,15 @@ const Header = () => {
             <li className="link-none">
               <Link
                 to="/"
-                className="flex w-full px-2.5 text-base  font-medium hover:text-green-500"
+                className="flex w-full px-2.5 text-md  font-semibold hover:text-zinc-700"
               >
-                Home
+                Suppliers
               </Link>
             </li>
             <li className="link-none">
               <Link
                 to="/"
-                className="flex w-full px-2.5 text-base font-medium hover:text-green-500"
+                className="flex w-full px-2.5 text-md font-semibold hover:text-zinc-700"
               >
                 Restaurants
               </Link>
@@ -68,7 +68,7 @@ const Header = () => {
             <li className="link-none ml-0">
               <Link
                 to="/riders"
-                className="flex w-full px-2.5 text-base font-medium hover:text-green-500"
+                className="flex w-full px-2.5 text-md font-semibold hover:text-zinc-700"
               >
                 Riders
               </Link>
@@ -76,7 +76,7 @@ const Header = () => {
             <li className="link-none">
               <Link
                 to="/"
-                className="flex w-full px-2.5 text-base font-medium hover:text-green-500"
+                className="flex w-full px-2.5 text-md font-semibold hover:text-zinc-700"
               >
                 Contact
               </Link>
@@ -85,16 +85,9 @@ const Header = () => {
 
           <button
             onClick={onClick}
-            className="flex justify-center items-center text-base font-medium bg-white text-black border border-black hover:border-green-500 hover:text-green-500 py-2 px-2 w-32 rounded-md"
+            className="flex justify-center items-center text-sm font-semibold  bg-black hover:bg-zinc-700 text-white p-3 w-32 rounded-xl"
           >
-            Login
-          </button>
-
-          <button
-            onClick={onClick}
-            className="flex justify-center items-center font-medium text-base bg-black hover:bg-green-500 text-white pt-2.5 py-3 px-3 w-32 rounded-md"
-          >
-            Register
+            Sign In
           </button>
         </nav>
       </div>
