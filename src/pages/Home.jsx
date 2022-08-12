@@ -45,7 +45,7 @@ const Home = () => {
             <h1 className="text-3xl md:text-7xl font-fredoka font-normal tracking-wide leading-snug md:leading-tight pb-2">
               Delivered to Your Kitchen in minutes.
             </h1>
-            <p className="leading-relaxed mt-5 text-xl w-4/5">
+            <p className="leading-relaxed mt-5 text-xl">
               Join our community of over{" "}
               <span className="font-bold text-md ">500+</span> leading caterers,
               restaurateurs and hospitality businesses who enjoy better buying
@@ -84,7 +84,7 @@ const Home = () => {
                   </svg>
                 </span>
               </button>
-              <button class="bg-zinc-100 text-black font-medium p-3 rounded-xl inline-flex items-center w-42">
+              <button class="bg-zinc-100 text-black font-medium p-3 rounded-xl inline-flex items-center w-43">
                 <span className="text-sm ml-2 flex flex-row">
                   Contact sales{" "}
                   <svg
@@ -439,7 +439,7 @@ const Home = () => {
           </div>
         </div>
         <div className="bg-white p-4">
-          <div className="md:flex justify-between max-w-screen-xl mx-auto bg-black rounded-md">
+          <div className="md:flex justify-between max-w-screen-xl mx-auto bg-black my-24 rounded-md">
             <div className="w-3/5">
               <div className="p-16  justify-center align-middle">
                 <div className=" flex-column">
@@ -456,11 +456,11 @@ const Home = () => {
                 <div className="flex flex-row gap-2 md:gap-7 justify-start pt-10">
                   <button class="bg-white text-black border border-black font-medium p-3 rounded-xl inline-flex items-center w-42">
                     <img className="h-6 w-6" src={apple} alt="apple" />{" "}
-                    <span className="text-sm ml-2">Get on iPhone</span>
+                    <span className="text-sm">Get on iPhone</span>
                   </button>
                   <button class="bg-white text-black border border-black font-medium p-3 rounded-xl inline-flex items-center w-42">
                     <img className="h-6 w-6" src={android} alt="android" />{" "}
-                    <span className="text-sm ml-2">Get on Android</span>
+                    <span className="text-sm">Get on Android</span>
                   </button>
                 </div>
               </div>

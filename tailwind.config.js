@@ -7,7 +7,7 @@ module.exports = {
         alata: ["Alata", "sans-serif"],
         prompt: ["Prompt", "sans-serif"],
         outfit: ["Outfit", "sans-serif"],
-        fredoka: ["Fredoka One", "sans-serif"],
+        fredoka: ["DM Serif Text", "sans-serif"],
         overpass: ["Varela", "sans-serif"],
         urbanist: ["Urbanist", "sans-serif"],
         redhat: ["Red Hat Display", "sans-serif"],
