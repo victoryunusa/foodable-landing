@@ -59,7 +59,7 @@ const Header = () => {
             </li>
             <li className="link-none">
               <Link
-                to="/"
+                to="/restaurants"
                 className="flex w-full px-2.5 text-md font-semibold hover:text-zinc-700"
               >
                 Restaurants

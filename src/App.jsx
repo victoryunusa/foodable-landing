@@ -10,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
+          <Route path="/restaurants" element={<Riders />} />
           <Route path="/riders" element={<Riders />} />
         </Route>
       </Routes>

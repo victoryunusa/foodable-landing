@@ -7,6 +7,8 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
+    "flowbite": "^1.5.2",
+    "flowbite-react": "^0.1.6",
     "framer-motion": "^6.3.0",
     "react": "^17.0.2",
     "react-animated-css": "^1.2.1",

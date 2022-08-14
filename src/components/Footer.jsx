@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/images/foodable-logo-white.png";
 
 const Footer = () => {
   const prod_year = new Date();
@@ -13,7 +14,7 @@ const Footer = () => {
                 to="/"
                 className="text-3xl tracking-wide font-bold font-alata"
               >
-                foodabl<span className="text-green-500 ">e</span>
+                <img className="w-32" src={logo} alt="logo" />
               </Link>
             </div>
           </div>
