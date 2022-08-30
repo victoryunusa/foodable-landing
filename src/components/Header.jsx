@@ -54,7 +54,7 @@ const Header = () => {
                 to="/"
                 className="flex w-full px-2.5 text-md  font-semibold hover:text-zinc-700"
               >
-                Suppliers
+                Become a supplier
               </Link>
             </li>
             <li className="link-none">

@@ -445,7 +445,7 @@ const Home = () => {
         </div>
       </div>
       <div className="bg-white p-4">
-        <div className="md:flex justify-between max-w-screen-xl mx-auto bg-black my-24 rounded-md">
+        <div className="md:flex justify-between max-w-screen-xl mx-auto bg-black my-24 rounded-lg">
           <div className="md:w-3/5">
             <div className="md:p-16 p-6 flex flex-col justify-between">
               <div className="flex flex-col">
