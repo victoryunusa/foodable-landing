@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/images/foodable-logo-white.png";
+import logo from "../assets/images/nelsa-logo-white.svg";
 
 const Footer = () => {
   const prod_year = new Date();
@@ -14,7 +14,7 @@ const Footer = () => {
                 to="/"
                 className="text-3xl tracking-wide font-bold font-alata"
               >
-                <img className="w-32" src={logo} alt="logo" />
+                <img className="w-28" src={logo} alt="logo" />
               </Link>
             </div>
           </div>
@@ -64,10 +64,10 @@ const Footer = () => {
                     <Link to="#">Producer guide</Link>
                   </li>
                   <li className="hover:underline hover:underline-offset-2">
-                    <Link to="#">Life at Foodable</Link>
+                    <Link to="#">Life at Nelsa</Link>
                   </li>
                   <li className="hover:underline hover:underline-offset-2">
-                    <Link to="#">Foodable Chef Lab</Link>
+                    <Link to="#">Nelsa Chef Lab</Link>
                   </li>
                 </ul>
               </div>
@@ -76,7 +76,7 @@ const Footer = () => {
         </div>
         <div className="flex justify-between pt-4">
           <div>
-            <p className="text-sm">© Foodable {prod_year.getFullYear()}</p>
+            <p className="text-sm">© Nelsa {prod_year.getFullYear()}</p>
           </div>
           <div>
             <p className="text-sm">
