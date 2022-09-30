@@ -5,7 +5,7 @@ import "animate.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-document.title = "foodable";
+document.title = "Nelsa";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
