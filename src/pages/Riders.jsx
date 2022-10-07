@@ -5,15 +5,14 @@ const Riders = () => {
     <div className={`bg-white p-4`}>
       <div className="flex flex-col-reverse md:flex md:flex-row justify-between  px-15 py-8 max-w-screen-xl gap-10 mx-auto text-black pt-5 md:pt-10 ">
         <div className="md:w-3/5 mb-24">
-          <h1 className="text-4xl md:text-7xl font-syne font-semibold tracking-wide leading-snug md:leading-tight pb-2 mt-0 md:mt-20">
-            Quality Ingredients Delivered to Your Kitchen.
+          <h1 className="text-4xl md:text-7xl font-bold tracking-wide leading-snug md:leading-tight pb-2 mt-0 md:mt-20">
+            Nelsa Is Looking For Delivery Riders
           </h1>
           <p className="leading-relaxed mt-2">
-            Join our community of over{" "}
-            <span className="font-bold text-xl">500+</span> leading caterers,
-            restaurateurs and hospitality businesses who enjoy better buying
-            power whilst ensuring fair pricing, traceability and quality across
-            all produce categories.
+            Nelsa's rider crew is the backbone of our vision to change how
+            businesses get their groceries. The rider crew includes people from
+            all backgrounds & all walks of life, the only thing they all have in
+            common is: they love cycling.
           </p>
         </div>
 

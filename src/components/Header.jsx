@@ -5,9 +5,6 @@ import logo from "../assets/images/nelsa-logo.svg";
 
 const Header = () => {
   const [active, setActive] = useState(false);
-  const onClick = () => {
-    window.open("https://foodable.ng");
-  };
   const onClose = () => {
     setActive(!active);
   };
@@ -17,7 +14,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between text-black">
         <div className="">
           <Link to="/" className="text-3xl font-alata tracking-wide font-bold">
-            <img className="w-28" src={logo} alt="logo" />
+            <img className="w-20" src={logo} alt="logo" />
           </Link>
         </div>
         <div onClick={onClose} className="md:hidden cursor-pointer">
@@ -51,7 +48,7 @@ const Header = () => {
           <ul className="md:flex-row md:flex items-center md:space-x-2">
             <li className="link-none">
               <Link
-                to="/"
+                to="/become-a-supplier"
                 className="flex w-full px-2.5 text-md  font-semibold hover:text-zinc-700"
               >
                 Become a supplier
@@ -59,23 +56,24 @@ const Header = () => {
             </li>
             <li className="link-none">
               <Link
-                to="/restaurants"
+                to="/buy"
                 className="flex w-full px-2.5 text-md font-semibold hover:text-zinc-700"
               >
-                Restaurants
+                Buy
               </Link>
             </li>
             <li className="link-none ml-0">
               <Link
-                to="/riders"
+                to="/ride-with-us"
                 className="flex w-full px-2.5 text-md font-semibold hover:text-zinc-700"
               >
                 Riders
               </Link>
             </li>
+
             <li className="link-none">
               <Link
-                to="/"
+                to="/contact"
                 className="flex w-full px-2.5 text-md font-semibold hover:text-zinc-700"
               >
                 Contact
@@ -83,12 +81,14 @@ const Header = () => {
             </li>
           </ul>
 
-          <button
-            onClick={onClick}
+          <a
+            href="https://app.foodable.ng"
+            target="_blank"
+            rel="noreferrer"
             className="flex justify-center items-center text-sm font-semibold  bg-black hover:bg-zinc-700 text-white p-3 w-32 rounded-xl"
           >
             Sign In
-          </button>
+          </a>
         </nav>
       </div>
     </header>

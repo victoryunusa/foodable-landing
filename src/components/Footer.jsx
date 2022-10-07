@@ -10,21 +10,20 @@ const Footer = () => {
         <div className="flex flex-col  md:flex md:flex-row w-full mb-10">
           <div className="flex-col w-1/3">
             <div className="">
-              <Link
-                to="/"
-                className="text-3xl tracking-wide font-bold font-alata"
-              >
-                <img className="w-28" src={logo} alt="logo" />
+              <Link to="/" className="text-3xl tracking-wide font-bold">
+                <img className="w-20" src={logo} alt="logo" />
               </Link>
             </div>
           </div>
           <div className="w-full mt-5 md:mt-0 md:w-2/3">
             <div className="flex flex-col md:flex md:flex-row w-full">
               <div className="flex flex-col w-full mb-5 mt-5 md:mt-0  md:w-1/3">
-                <h3 className="font-bold pb-2.5 text-xl">General</h3>
+                <h3 className="font-bold pb-2.5 text-xl font-jakarta">
+                  General
+                </h3>
                 <ul className="flex flex-col gap-y-2">
                   <li className="hover:underline hover:underline-offset-2">
-                    <Link to="#">Restaurants</Link>
+                    <Link to="#">Our Impact</Link>
                   </li>
                   <li className="hover:underline hover:underline-offset-2">
                     <Link to="#">Suppliers</Link>
@@ -38,7 +37,9 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="flex flex-col w-full mb-5 mt-5 md:mt-0  md:w-1/3">
-                <h3 className="font-bold pb-2.5 text-xl">Work with us</h3>
+                <h3 className="font-bold pb-2.5 text-xl font-jakarta">
+                  Work with us
+                </h3>
                 <ul className="flex flex-col gap-y-2">
                   <li className="hover:underline hover:underline-offset-2">
                     <Link to="#">About</Link>
@@ -50,12 +51,14 @@ const Footer = () => {
                     <Link to="#">Contact us</Link>
                   </li>
                   <li className="hover:underline hover:underline-offset-2">
-                    <Link to="#">Press</Link>
+                    <Link to="#">Investor Relations</Link>
                   </li>
                 </ul>
               </div>
               <div className="flex flex-col w-full mb-5 mt-5 md:mt-0 md:w-1/3 ">
-                <h3 className="font-bold pb-2.5 text-xl">Follow our stories</h3>
+                <h3 className="font-bold pb-2.5 text-xl font-jakarta">
+                  Follow our stories
+                </h3>
                 <ul className="flex flex-col gap-y-2">
                   <li className="hover:underline hover:underline-offset-2">
                     <Link to="#">Restaurant management</Link>

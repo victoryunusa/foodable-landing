@@ -2,9 +2,10 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import { Animated } from "react-animated-css";
-import retail from "../assets/images/money.png";
-import delivery from "../assets/images/delivery-bike.png";
-import environment from "../assets/images/barcode-scanner (1).png";
+import fresh from "../assets/images/organic.png";
+import safe from "../assets/images/food-safety.png";
+import farmer from "../assets/images/farmer.png";
+import qrcode from "../assets/images/qr-code.png";
 import android from "../assets/images/playstore.svg";
 import apple from "../assets/images/apple-logo.svg";
 import portrait from "../assets/images/main-lading.png";
@@ -18,20 +19,20 @@ const Home = () => {
   return (
     <>
       <div className={`bg-white p-4`}>
-        <div className="flex flex-col-reverse md:flex md:flex-row justify-between  px-15 py-5 max-w-screen-xl gap-10 mx-auto text-black pt-5 md:pt-10 ">
+        <div className="flex flex-col-reverse md:flex md:flex-row justify-between py-10 my-10 max-w-screen-xl gap-10 mx-auto text-black pt-5 md:pt-10 ">
           <div className="md:w-3/5 mb-2">
-            <h1 className="text-5xl md:text-7xl font-fredoka font-normal tracking-wide leading-snug md:leading-tight mt-0 md:mt-20">
-              Fresh{" "}
+            <h1 className="text-4xl md:text-7xl font-jakarta font-extrabold tracking-wide leading-snug md:leading-tight">
+              Delivering farm fresh{" "}
               <span className="text-green-500">
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
                   words={[
-                    "Ingredients",
-                    "Meat",
-                    "Fish",
-                    "Veggies",
-                    "Fruits",
-                    "Drinks",
+                    "ingredients",
+                    "meat",
+                    "fish",
+                    "veggies",
+                    "fruits",
+                    "produce",
                   ]}
                   loop={0}
                   cursor
@@ -42,10 +43,10 @@ const Home = () => {
                 />
               </span>
             </h1>
-            <h1 className="text-5xl md:text-7xl font-fredoka font-normal tracking-wide leading-snug md:leading-tight pb-2">
-              Delivered to Your Kitchen in minutes.
+            <h1 className="text-4xl md:text-7xl font-jakarta font-extrabold leading-snug md:leading-tight pb-2">
+              at low costs
             </h1>
-            <p className="leading-relaxed mt-5 text-xl text-zinc-600">
+            <p className="leading-relaxed mt-5 text-lg text-zinc-600">
               Join our community of over{" "}
               <span className="font-bold text-xl ">500+</span> leading caterers,
               restaurateurs and hospitality businesses who enjoy better buying
@@ -122,58 +123,318 @@ const Home = () => {
           </div>
 
           <motion.div
-            className="md:w-2/5"
+            className="md:w-2/5 flex items-center"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <img
-              className="self-end  md:h-full"
-              src={portrait}
-              alt="landing.png"
-            />
+            <img className=" rounded-lg" src={portrait} alt="landing.png" />
           </motion.div>
         </div>
       </div>
 
-      <div className="bg-white p-4 mb-20">
+      <div className="bg-zinc-50 p-20">
         <Animated
           animationIn="fadeInRight"
           animationOut="fadeOut"
           isVisible={true}
         >
-          <div className="md:flex md:flex-row flex flex-col justify-between py-2 max-w-screen-xl mx-auto gap-2">
+          <div className="md:flex md:flex-row flex flex-col justify-between p-10 max-w-screen-xl mx-auto bg-zinc-50 rounded-lg gap-5">
             <div className="md:w-1/4 mb-7 md:mb-0 rounded-md">
-              <img src={retail} alt="retail" className="w-12 md:w-16 pb-2" />
-              <h1 className="text-2xl font-bold mb-1">Save money</h1>
-              <p className="leading-relaxed text-lg text-zinc-600">
-                Better prices than your local market & no minimum order value.
-              </p>
+              <div className="flex flex-row gap-3">
+                <div>
+                  <img src={fresh} alt="retail" className="w-10 md:w-12 pb-2" />
+                </div>
+                <div>
+                  <h1 className="text-2xl font-bold font-jakarta">
+                    Super Fresh
+                  </h1>
+                  <p className="leading-snug tracking-tight text-zinc-600 w-44 mt-2">
+                    12 hours from farm to your door
+                  </p>
+                </div>
+              </div>
             </div>
             <div className="md:w-1/4 mb-7 md:mb-0 rounded-md">
-              <img
-                src={delivery}
-                alt="delivery"
-                className="w-12 md:w-16 pb-2"
-              />
-              <h1 className="text-2xl font-bold mb-1">Take control</h1>
-              <p className="leading-relaxed text-lg text-zinc-600">
-                Timing is everything. We’ll be at your door before you know it.
-              </p>
+              <div className="flex flex-row gap-3">
+                <div>
+                  <img src={safe} alt="retail" className="w-10 md:w-12 pb-2" />
+                </div>
+                <div>
+                  <h1 className="text-2xl font-bold font-jakarta">Safe</h1>
+                  <p className="leading-snug tracking-tight text-zinc-600 w-44 mt-2">
+                    Responsibly grown, hygeinically packed
+                  </p>
+                </div>
+              </div>
             </div>
             <div className="md:w-1/4 mb-7 md:mb-0 rounded-md">
-              <img
-                src={environment}
-                alt="environment"
-                className="w-12 md:w-16 pb-2"
-              />
-              <h1 className="text-2xl font-bold mb-1">Be Sustainable</h1>
-              <p className="leading-relaxed text-lg text-zinc-600">
-                We guarantee traceability hence increasing accountability and
-                safety.
-              </p>
+              <div className="flex flex-row gap-2">
+                <div>
+                  <img
+                    src={qrcode}
+                    alt="delivery"
+                    className="w-10 md:w-12 pb-2"
+                  />
+                </div>
+                <div>
+                  <h1 className="text-2xl font-bold font-jakarta">Traceable</h1>
+                  <p className="leading-snug tracking-tight text-zinc-600 w-44 mt-2">
+                    QR code to trace the source farm
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="md:w-1/4 mb-7 md:mb-0 rounded-md">
+              <div className="flex flex-row gap-3">
+                <div>
+                  <img
+                    src={farmer}
+                    alt="delivery"
+                    className="w-10 md:w-12 pb-2"
+                  />
+                </div>
+                <div>
+                  <h1 className="text-2xl font-bold font-jakarta">
+                    Support farmers
+                  </h1>
+                  <p className="leading-snug tracking-tight text-zinc-600 w-44 mt-2">
+                    Help smallholder farmers earn more
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </Animated>
+      </div>
+      <div className="bg-white p-4">
+        <div className="md:flex justify-start  px-15 py-8 max-w-screen-xl mx-auto gap-5">
+          <div className="flex flex-col w-full">
+            <div className="flex flex-col">
+              <h3 className="font-bold font-jakarta text-4xl mb-5">
+                Creating opportunities for everyone
+              </h3>
+              <p>
+                We are the first platform enabling increased benefits for
+                farmers, retailers, and consumers.
+              </p>
+            </div>
+            <div className="flex flex-row gap-10 w-full mt-10">
+              <div className="w-1/3 bg-black text-white p-10 rounded-lg">
+                <div className="mb-3">
+                  <h3 className="font-bold font-jakarta text-2xl">
+                    Benefits for farmers
+                  </h3>
+                </div>
+                <div>
+                  <ul className="space-y-1 max-w-md list-inside text-gray-500 dark:text-gray-400">
+                    <li className="flex items-center">
+                      <svg
+                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      20% more revenue
+                    </li>
+                    <li className="flex items-center">
+                      <svg
+                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      One-stop-sale
+                    </li>
+                    <li className="flex items-center">
+                      <svg
+                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      Payment in 24 hours
+                    </li>
+                    <li className="flex items-center">
+                      <svg
+                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      Transparent weighing
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="w-1/3 bg-zinc-100 hover:bg-black hover:text-white p-10 rounded-lg">
+                <div className="mb-3">
+                  <h3 className="font-bold font-jakarta text-2xl">
+                    Convenience for retailers
+                  </h3>
+                </div>
+                <div>
+                  <ul className="space-y-1 max-w-md list-inside text-gray-500 dark:text-gray-400">
+                    <li className="flex items-center">
+                      <svg
+                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      Wholesale prices
+                    </li>
+                    <li className="flex items-center">
+                      <svg
+                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      Doorstep delivery
+                    </li>
+                    <li className="flex items-center">
+                      <svg
+                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      High quality graded produce
+                    </li>
+                    <li className="flex items-center">
+                      <svg
+                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      Convenient &amp; time saving
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="w-1/3 bg-zinc-100 hover:bg-black hover:text-white p-10 rounded-lg">
+                <div className="mb-3">
+                  <h3 className="font-bold font-jakarta text-2xl">
+                    Savings for consumers
+                  </h3>
+                </div>
+                <div>
+                  <ul className="space-y-1 max-w-md list-inside text-gray-500 dark:text-gray-400">
+                    <li className="flex items-center">
+                      <svg
+                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      Hygienically handled produce
+                    </li>
+                    <li className="flex items-center">
+                      <svg
+                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      100% traceable to farm
+                    </li>
+                    <li className="flex items-center">
+                      <svg
+                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      Better quality
+                    </li>
+                    <li className="flex items-center">
+                      <svg
+                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      Safe & healthy meals
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className=" bg-zinc-100 p-4">
         <div className="md:flex justify-start  px-15 py-8 max-w-screen-xl mx-auto gap-5">
@@ -228,8 +489,10 @@ const Home = () => {
                     </svg>
                   </div>
                   <div className="w-3/4">
-                    <h1 className="font-bold text-2xl">Add items to cart</h1>
-                    <h1 className="font-normal text-lg text-zinc-600 mt-1">
+                    <h1 className="font-jakarta font-bold text-2xl">
+                      Add items to cart
+                    </h1>
+                    <h1 className="text-zinc-600 mt-1">
                       Sign in and collect all your produce to cart.
                     </h1>
                   </div>
@@ -288,8 +551,10 @@ const Home = () => {
                     </svg>
                   </div>
                   <div className="w-3/4">
-                    <h1 className="font-bold text-2xl">Continue to payment</h1>
-                    <h1 className="font-normal text-lg text-zinc-600 mt-1">
+                    <h1 className="font-jakarta font-bold text-2xl">
+                      Continue to payment
+                    </h1>
+                    <h1 className=" text-zinc-600 mt-1">
                       Choose to pay now, pay on delivery or pay later.
                     </h1>
                   </div>
@@ -383,10 +648,10 @@ const Home = () => {
                     </svg>
                   </div>
                   <div className="w-3/4">
-                    <h1 className="font-bold text-2xl">
+                    <h1 className="font-jakarta font-bold text-2xl">
                       Wait for your delivery
                     </h1>
-                    <h1 className="font-normal text-lg text-zinc-600 mt-1">
+                    <h1 className=" text-zinc-600 mt-1">
                       We'll deliver as early as possible.
                     </h1>
                   </div>
@@ -395,10 +660,10 @@ const Home = () => {
             </div>
             <div className="md:w-3/5 flex flex-col justify-center md:p-28 p-5">
               <div ClassName="flex ">
-                <h1 className="font-fredoka text-5xl">
-                  A few simple steps to get started
+                <h1 className="font-jakarta font-bold text-5xl tracking-wide leading-snug md:leading-tight">
+                  Simple steps to get started
                 </h1>
-                <h3 className="font-normal text-lg text-zinc-600 mt-1">
+                <h3 className=" text-lg text-zinc-600 mt-5">
                   We believe that food should be delicious, ingredients should
                   be high quality, and meals should be easy to prepare. We make
                   it easy to stock up on great products from trusted brands at
@@ -449,10 +714,10 @@ const Home = () => {
           <div className="md:w-3/5">
             <div className="md:p-16 p-6 flex flex-col justify-between">
               <div className="flex flex-col">
-                <h1 className="font-fredoka font-normal text-5xl text-white mb-2">
+                <h1 className="font-jakarta font-bold text-5xl tracking-tight text-white mb-5">
                   Stock and restock with ease
                 </h1>
-                <h3 className="font-normal text-lg text-white">
+                <h3 className=" text-lg text-white">
                   Handle everything from making orders and approving payments,
                   to checking balances, seeing your business performance and
                   lots more.
