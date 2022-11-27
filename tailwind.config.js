@@ -7,6 +7,10 @@ module.exports = {
         jakarta: ["Plus Jakarta Sans", "sans-serif"],
         redhat: ["Red Hat Display", "sans-serif"],
       },
+      colors: {
+        nelsa_lime: "#DDF246",
+        nelsa_lime_1: "#E6F859",
+      },
     },
   },
   plugins: [],

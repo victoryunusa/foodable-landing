@@ -45,11 +45,11 @@ const Header = () => {
        md:static md:w-auto md:flex-row md:flex md:space-x-5
       `}
         >
-          <ul className="md:flex-row md:flex items-center md:space-x-2">
+          <ul className="md:flex-row md:flex items-center md:space-x-2 ">
             <li className="link-none">
               <Link
                 to="/become-a-supplier"
-                className="flex w-full px-2.5 text-md  font-semibold hover:text-zinc-700"
+                className="flex w-full px-2.5 text-md font-bold hover:text-zinc-700"
               >
                 Become a supplier
               </Link>
@@ -57,7 +57,7 @@ const Header = () => {
             <li className="link-none">
               <Link
                 to="/buy"
-                className="flex w-full px-2.5 text-md font-semibold hover:text-zinc-700"
+                className="flex w-full px-2.5 text-md font-bold hover:text-zinc-700"
               >
                 Buy
               </Link>
@@ -65,7 +65,7 @@ const Header = () => {
             <li className="link-none ml-0">
               <Link
                 to="/ride-with-us"
-                className="flex w-full px-2.5 text-md font-semibold hover:text-zinc-700"
+                className="flex w-full px-2.5 text-md font-bold hover:text-zinc-700"
               >
                 Riders
               </Link>
@@ -74,7 +74,7 @@ const Header = () => {
             <li className="link-none">
               <Link
                 to="/contact"
-                className="flex w-full px-2.5 text-md font-semibold hover:text-zinc-700"
+                className="flex w-full px-2.5 text-md font-bold hover:text-zinc-700"
               >
                 Contact
               </Link>
@@ -82,10 +82,10 @@ const Header = () => {
           </ul>
 
           <a
-            href="https://app.foodable.ng"
+            href="https://app.getnelsa.com"
             target="_blank"
             rel="noreferrer"
-            className="flex justify-center items-center text-sm font-semibold  bg-black hover:bg-zinc-700 text-white p-3 w-32 rounded-xl"
+            className="flex justify-center items-center text-md bg-nelsa_lime hover:bg-nelsa_lime_1 font-bold text-black p-3 w-32 rounded-xl"
           >
             Sign In
           </a>

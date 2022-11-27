@@ -23,7 +23,7 @@ const Home = () => {
           <div className="md:w-3/5 mb-2">
             <h1 className="text-4xl md:text-7xl font-jakarta font-extrabold tracking-wide leading-snug md:leading-tight">
               Delivering farm fresh{" "}
-              <span className="text-green-500">
+              <span className="text-nelsa_lime">
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
                   words={[
@@ -132,19 +132,19 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-zinc-50 p-20">
+      <div className="bg-zinc-50 p-5 md:p-20">
         <Animated
           animationIn="fadeInRight"
           animationOut="fadeOut"
           isVisible={true}
         >
-          <div className="md:flex md:flex-row flex flex-col justify-between p-10 max-w-screen-xl mx-auto bg-zinc-50 rounded-lg gap-5">
+          <div className="md:flex md:flex-row flex flex-col justify-between p-5 md:p-10 max-w-screen-xl mx-auto bg-zinc-50 rounded-lg gap-5">
             <div className="md:w-1/4 mb-7 md:mb-0 rounded-md">
               <div className="flex flex-row gap-3">
-                <div>
+                <div className="">
                   <img src={fresh} alt="retail" className="w-10 md:w-12 pb-2" />
                 </div>
-                <div>
+                <div className="">
                   <h1 className="text-2xl font-bold font-jakarta">
                     Super Fresh
                   </h1>
@@ -218,18 +218,18 @@ const Home = () => {
                 farmers, retailers, and consumers.
               </p>
             </div>
-            <div className="flex flex-row gap-10 w-full mt-10">
-              <div className="w-1/3 bg-black text-white p-10 rounded-lg">
-                <div className="mb-3">
+            <div className="flex flex-row gap-10 w-full mt-10 overflow-x-auto">
+              <div className="w-full md:w-1/3 bg-black text-white p-10 rounded-lg">
+                <div className="mb-3 w-full">
                   <h3 className="font-bold font-jakarta text-2xl">
                     Benefits for farmers
                   </h3>
                 </div>
-                <div>
+                <div className="w-full">
                   <ul className="space-y-1 max-w-md list-inside text-gray-500 dark:text-gray-400">
                     <li className="flex items-center">
                       <svg
-                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -244,7 +244,7 @@ const Home = () => {
                     </li>
                     <li className="flex items-center">
                       <svg
-                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -259,7 +259,7 @@ const Home = () => {
                     </li>
                     <li className="flex items-center">
                       <svg
-                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -274,7 +274,7 @@ const Home = () => {
                     </li>
                     <li className="flex items-center">
                       <svg
-                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -290,7 +290,7 @@ const Home = () => {
                   </ul>
                 </div>
               </div>
-              <div className="w-1/3 bg-zinc-100 hover:bg-black hover:text-white p-10 rounded-lg">
+              <div className="w-full md:w-1/3 bg-zinc-100 hover:bg-black hover:text-white p-10 rounded-lg">
                 <div className="mb-3">
                   <h3 className="font-bold font-jakarta text-2xl">
                     Convenience for retailers
@@ -300,7 +300,7 @@ const Home = () => {
                   <ul className="space-y-1 max-w-md list-inside text-gray-500 dark:text-gray-400">
                     <li className="flex items-center">
                       <svg
-                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -315,7 +315,7 @@ const Home = () => {
                     </li>
                     <li className="flex items-center">
                       <svg
-                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -330,7 +330,7 @@ const Home = () => {
                     </li>
                     <li className="flex items-center">
                       <svg
-                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -345,7 +345,7 @@ const Home = () => {
                     </li>
                     <li className="flex items-center">
                       <svg
-                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -361,7 +361,7 @@ const Home = () => {
                   </ul>
                 </div>
               </div>
-              <div className="w-1/3 bg-zinc-100 hover:bg-black hover:text-white p-10 rounded-lg">
+              <div className="w-full md:w-1/3 bg-zinc-100 hover:bg-black hover:text-white p-10 rounded-lg">
                 <div className="mb-3">
                   <h3 className="font-bold font-jakarta text-2xl">
                     Savings for consumers
@@ -371,7 +371,7 @@ const Home = () => {
                   <ul className="space-y-1 max-w-md list-inside text-gray-500 dark:text-gray-400">
                     <li className="flex items-center">
                       <svg
-                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -386,7 +386,7 @@ const Home = () => {
                     </li>
                     <li className="flex items-center">
                       <svg
-                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -401,7 +401,7 @@ const Home = () => {
                     </li>
                     <li className="flex items-center">
                       <svg
-                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -416,7 +416,7 @@ const Home = () => {
                     </li>
                     <li className="flex items-center">
                       <svg
-                        className="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0"
+                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -710,14 +710,14 @@ const Home = () => {
         </div>
       </div>
       <div className="bg-white p-4">
-        <div className="md:flex justify-between max-w-screen-xl mx-auto bg-black my-24 rounded-lg">
+        <div className="md:flex justify-between max-w-screen-xl mx-auto bg-nelsa_lime my-24 rounded-lg">
           <div className="md:w-3/5">
             <div className="md:p-16 p-6 flex flex-col justify-between">
               <div className="flex flex-col">
-                <h1 className="font-jakarta font-bold text-5xl tracking-tight text-white mb-5">
+                <h1 className="font-jakarta font-bold text-5xl tracking-tight text-black mb-5">
                   Stock and restock with ease
                 </h1>
-                <h3 className=" text-lg text-white">
+                <h3 className=" text-lg text-black">
                   Handle everything from making orders and approving payments,
                   to checking balances, seeing your business performance and
                   lots more.
@@ -725,7 +725,7 @@ const Home = () => {
               </div>
 
               <div className="flex flex-row gap-2 md:gap-7 pt-10">
-                <button class="bg-white text-black border gap-2 border-black font-medium mt-2 md:mt-0  p-3 rounded-xl inline-flex justify-center items-center md:w-42 w-44">
+                <button class="bg-black text-white gap-2 font-medium mt-2 md:mt-0  p-3 rounded-xl inline-flex justify-center items-center md:w-42 w-44">
                   <img
                     className="md:h-6 md:w-6 h-4 w-4"
                     src={apple}
@@ -733,7 +733,7 @@ const Home = () => {
                   />{" "}
                   <span className="md:text-sm text-xs">Get on iPhone</span>
                 </button>
-                <button class="bg-white text-black border gap-2 border-black font-medium mt-2 md:mt-0 p-3 rounded-xl inline-flex justify-center items-center md:w-42 w-44">
+                <button class="bg-black text-white gap-2 font-medium mt-2 md:mt-0 p-3 rounded-xl inline-flex justify-center items-center md:w-42 w-44">
                   <img
                     className="md:h-6 md:w-6 h-4 w-4"
                     src={android}
