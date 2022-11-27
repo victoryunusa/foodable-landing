@@ -7,13 +7,13 @@ import safe from "../assets/images/food-safety.png";
 import farmer from "../assets/images/farmer.png";
 import qrcode from "../assets/images/qr-code.png";
 import android from "../assets/images/playstore.svg";
-import apple from "../assets/images/apple-logo.svg";
+import apple from "../assets/images/icons8-apple-logo.svg";
 import portrait from "../assets/images/main-lading.png";
 import iphone from "../assets/images/iphone-1.png";
 
 const Home = () => {
   const register = () => {
-    window.open("https://foodable.ng/");
+    window.open("https://app.getnelsa.com/");
   };
 
   return (
@@ -23,30 +23,17 @@ const Home = () => {
           <div className="md:w-3/5 mb-2">
             <h1 className="text-4xl md:text-7xl font-jakarta font-extrabold tracking-wide leading-snug md:leading-tight">
               Delivering farm fresh{" "}
-              <span className="text-nelsa_lime">
-                {/* Style will be inherited from the parent element */}
-                <Typewriter
-                  words={[
-                    "ingredients",
-                    "meat",
-                    "fish",
-                    "veggies",
-                    "fruits",
-                    "produce",
-                  ]}
-                  loop={0}
-                  cursor
-                  cursorStyle="|"
-                  typeSpeed={60}
-                  deleteSpeed={50}
-                  delaySpeed={1000}
-                />
+              <span className="bg-cover bg-app-bg">
+                <span className="text-black ">
+                  {/* Style will be inherited from the parent element */}
+                  produce
+                </span>
               </span>
             </h1>
             <h1 className="text-4xl md:text-7xl font-jakarta font-extrabold leading-snug md:leading-tight pb-2">
               at low costs
             </h1>
-            <p className="leading-relaxed mt-5 text-lg text-zinc-600">
+            <p className="leading-relaxed mt-5 text-md text-zinc-500">
               Join our community of over{" "}
               <span className="font-bold text-xl ">500+</span> leading caterers,
               restaurateurs and hospitality businesses who enjoy better buying
@@ -56,11 +43,11 @@ const Home = () => {
             <div className="flex flex-row gap-2 md:gap-7 justify-start mt-16">
               <motion.button
                 onClick={() => register()}
-                class="bg-black text-white font-medium p-3 rounded-xl inline-flex items-center w-48"
+                class="bg-black text-white font-bold p-3 rounded-lg inline-flex items-center w-56"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <span className="text-sm ml-2 flex flex-row">
+                <span className=" ml-2 flex flex-row">
                   Get started for free{" "}
                   <svg
                     className="w-4 ml-3"
@@ -88,11 +75,11 @@ const Home = () => {
                 </span>
               </motion.button>
               <motion.abutton
-                class="bg-zinc-100 text-black font-medium p-3 rounded-xl inline-flex items-center w-43 cursor-pointer"
+                class="bg-white text-black font-bold border p-3 rounded-lg inline-flex items-center w-43 cursor-pointer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <span className="text-sm ml-2 flex flex-row">
+                <span className=" ml-2 flex flex-row">
                   Contact sales{" "}
                   <svg
                     className="w-4 ml-3"
@@ -710,7 +697,7 @@ const Home = () => {
         </div>
       </div>
       <div className="bg-white p-4">
-        <div className="md:flex justify-between max-w-screen-xl mx-auto bg-nelsa_lime my-24 rounded-lg">
+        <div className="md:flex justify-between max-w-screen-xl mx-auto bg-nelsa_lime my-24 rounded-lg bg-world-map bg-contain bg-right bg-no-repeat">
           <div className="md:w-3/5">
             <div className="md:p-16 p-6 flex flex-col justify-between">
               <div className="flex flex-col">

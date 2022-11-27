@@ -70,7 +70,9 @@ const Footer = () => {
                     <Link to="#">Life at Nelsa</Link>
                   </li>
                   <li className="hover:underline hover:underline-offset-2">
-                    <Link to="#">Nelsa Chef Lab</Link>
+                    <a href="https://nelsa.bloggi.co/" target="_blank">
+                      Nelsa Chef Lab
+                    </a>
                   </li>
                 </ul>
               </div>

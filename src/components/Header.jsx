@@ -85,7 +85,7 @@ const Header = () => {
             href="https://app.getnelsa.com"
             target="_blank"
             rel="noreferrer"
-            className="flex justify-center items-center text-md bg-nelsa_lime hover:bg-nelsa_lime_1 font-bold text-black p-3 w-32 rounded-xl"
+            className="flex justify-center items-center text-md bg-nelsa_lime hover:bg-nelsa_lime_1 font-bold text-black p-3 w-32 rounded-lg"
           >
             Sign In
           </a>

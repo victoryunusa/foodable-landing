@@ -11,6 +11,10 @@ module.exports = {
         nelsa_lime: "#DDF246",
         nelsa_lime_1: "#E6F859",
       },
+      backgroundImage: {
+        "app-bg": "url('./assets/images/app-bg.png')",
+        "world-map": "url('./assets/images/world_map.svg')",
+      },
     },
   },
   plugins: [],
