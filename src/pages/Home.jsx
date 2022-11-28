@@ -10,6 +10,8 @@ import android from "../assets/images/playstore.svg";
 import apple from "../assets/images/icons8-apple-logo.svg";
 import portrait from "../assets/images/main-lading.png";
 import iphone from "../assets/images/iphone-1.png";
+import chef from "../assets/images/black-chef.jpg";
+import sustainable from "../assets/images/sustain.jpg";
 
 const Home = () => {
   const register = () => {
@@ -22,17 +24,15 @@ const Home = () => {
         <div className="flex flex-col-reverse md:flex md:flex-row justify-between py-10 my-10 max-w-screen-xl gap-10 mx-auto text-black pt-5 md:pt-10 ">
           <div className="md:w-3/5 mb-2">
             <h1 className="text-4xl md:text-7xl font-jakarta font-extrabold tracking-wide leading-snug md:leading-tight">
-              Delivering farm fresh{" "}
-              <span className="bg-cover bg-app-bg">
+              Get the freshest and affordable produce{" "}
+              <span className=" bg-app-bg bg-[length:100%]">
                 <span className="text-black ">
                   {/* Style will be inherited from the parent element */}
-                  produce
+                  always
                 </span>
               </span>
             </h1>
-            <h1 className="text-4xl md:text-7xl font-jakarta font-extrabold leading-snug md:leading-tight pb-2">
-              at low costs
-            </h1>
+            <h1 className="text-4xl md:text-7xl font-jakarta font-extrabold leading-snug md:leading-tight pb-2"></h1>
             <p className="leading-relaxed mt-5 text-md text-zinc-500">
               Join our community of over{" "}
               <span className="font-bold text-xl ">500+</span> leading caterers,
@@ -197,226 +197,61 @@ const Home = () => {
         <div className="md:flex justify-start  px-15 py-8 max-w-screen-xl mx-auto gap-5">
           <div className="flex flex-col w-full">
             <div className="flex flex-col">
-              <h3 className="font-bold font-jakarta text-4xl mb-5">
-                Creating opportunities for everyone
+              <h3 className="font-bold font-jakarta text-6xl mb-5">
+                Join hundreds of our customers and...
               </h3>
-              <p>
-                We are the first platform enabling increased benefits for
-                farmers, retailers, and consumers.
-              </p>
             </div>
             <div className="flex flex-row gap-10 w-full mt-10 overflow-x-auto">
               <div className="w-full md:w-1/3 bg-black text-white p-10 rounded-lg">
-                <div className="mb-3 w-full">
+                <div className="mb-5">
+                  <img className="rounded-lg" src={chef} alt="Chef" />
+                </div>
+                <div className="mb-1 w-full">
                   <h3 className="font-bold font-jakarta text-2xl">
-                    Benefits for farmers
+                    Be efficient
                   </h3>
                 </div>
                 <div className="w-full">
-                  <ul className="space-y-1 max-w-md list-inside text-gray-500 dark:text-gray-400">
-                    <li className="flex items-center">
-                      <svg
-                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      20% more revenue
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      One-stop-sale
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      Payment in 24 hours
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      Transparent weighing
-                    </li>
-                  </ul>
+                  <p className="text-zinc-500">
+                    Save yourself time, money and stress thanks to our
+                    collective buying power, multi-product consolidated
+                    deliveries, and customer-centric approach
+                  </p>
                 </div>
               </div>
               <div className="w-full md:w-1/3 bg-zinc-100 hover:bg-black hover:text-white p-10 rounded-lg">
-                <div className="mb-3">
+                <div className="mb-5">
+                  <img className="rounded-lg" src={chef} alt="Chef" />
+                </div>
+                <div className="mb-1">
                   <h3 className="font-bold font-jakarta text-2xl">
-                    Convenience for retailers
+                    Be in control
                   </h3>
                 </div>
                 <div>
-                  <ul className="space-y-1 max-w-md list-inside text-gray-500 dark:text-gray-400">
-                    <li className="flex items-center">
-                      <svg
-                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      Wholesale prices
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      Doorstep delivery
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      High quality graded produce
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      Convenient &amp; time saving
-                    </li>
-                  </ul>
+                  <p className="text-zinc-500">
+                    Get traceable, fresher products and the ability to make
+                    informed, cost-efficient purchasing decisions through our
+                    shortened supply chain and on-demand, direct sourcing
+                  </p>
                 </div>
               </div>
               <div className="w-full md:w-1/3 bg-zinc-100 hover:bg-black hover:text-white p-10 rounded-lg">
-                <div className="mb-3">
+                <div className="mb-5">
+                  <img className="rounded-lg" src={sustainable} alt="Chef" />
+                </div>
+                <div className="mb-1">
                   <h3 className="font-bold font-jakarta text-2xl">
-                    Savings for consumers
+                    Be sustainable
                   </h3>
                 </div>
                 <div>
-                  <ul className="space-y-1 max-w-md list-inside text-gray-500 dark:text-gray-400">
-                    <li className="flex items-center">
-                      <svg
-                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      Hygienically handled produce
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      100% traceable to farm
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      Better quality
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-4 h-4 mr-1.5 text-nelsa_lime dark:text-nelsa_lime flex-shrink-0"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      Safe & healthy meals
-                    </li>
-                  </ul>
+                  <p className="text-zinc-500">
+                    Minimise your CO2 footprint, know where your products have
+                    come from, and have a positive impact on our cities through
+                    our decentralised supply model and greener last mile
+                    delivery
+                  </p>
                 </div>
               </div>
             </div>
@@ -660,11 +495,11 @@ const Home = () => {
               <div className="mt-10">
                 <motion.button
                   onClick={() => register()}
-                  class="bg-black text-white border border-black font-medium p-3 rounded-xl inline-flex items-center w-48"
+                  class="bg-black text-white font-bold p-3 rounded-lg  inline-flex items-center w-56"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 >
-                  <span className="text-sm ml-2 flex flex-row">
+                  <span className="text-md ml-2 flex flex-row">
                     Get started for free{" "}
                     <svg
                       className="w-4 ml-3"
@@ -711,22 +546,26 @@ const Home = () => {
                 </h3>
               </div>
 
-              <div className="flex flex-row gap-2 md:gap-7 pt-10">
-                <button class="bg-black text-white gap-2 font-medium mt-2 md:mt-0  p-3 rounded-xl inline-flex justify-center items-center md:w-42 w-44">
+              <div className="flex flex-col md:flex-row gap-2 md:gap-7 pt-10">
+                <button class="bg-black text-white gap-2 font-medium mt-2 md:mt-0  p-3 rounded-lg inline-flex justify-center items-center md:w-42 w-44">
                   <img
                     className="md:h-6 md:w-6 h-4 w-4"
                     src={apple}
                     alt="apple"
                   />{" "}
-                  <span className="md:text-sm text-xs">Get on iPhone</span>
+                  <span className="md:text-sm text-xs font-bold">
+                    Get on iPhone
+                  </span>
                 </button>
-                <button class="bg-black text-white gap-2 font-medium mt-2 md:mt-0 p-3 rounded-xl inline-flex justify-center items-center md:w-42 w-44">
+                <button class="bg-black text-white gap-2 font-medium mt-2 md:mt-0 p-3 rounded-lg inline-flex justify-center items-center md:w-42 w-44">
                   <img
                     className="md:h-6 md:w-6 h-4 w-4"
                     src={android}
                     alt="android"
                   />{" "}
-                  <span className="md:text-sm text-xs">Get on Android</span>
+                  <span className="md:text-sm text-xs font-bold">
+                    Get on Android
+                  </span>
                 </button>
               </div>
             </div>
