@@ -8,7 +8,7 @@ import farmer from "../assets/images/farmer.png";
 import qrcode from "../assets/images/qr-code.png";
 import android from "../assets/images/playstore.svg";
 import apple from "../assets/images/icons8-apple-logo.svg";
-import portrait from "../assets/images/main-lading.png";
+import portrait from "../assets/images/nelsa-landing.jpeg";
 import iphone from "../assets/images/iphone-1.png";
 import chef from "../assets/images/black-chef.jpg";
 import sustainable from "../assets/images/sustain.jpg";
@@ -24,21 +24,20 @@ const Home = () => {
         <div className="flex flex-col-reverse md:flex md:flex-row justify-between py-10 my-10 max-w-screen-xl gap-10 mx-auto text-black pt-5 md:pt-10 ">
           <div className="md:w-3/5 mb-2">
             <h1 className="text-4xl md:text-7xl font-jakarta font-extrabold tracking-wide leading-snug md:leading-tight">
-              Get the freshest and affordable produce{" "}
               <span className=" bg-app-bg bg-[length:100%]">
                 <span className="text-black ">
                   {/* Style will be inherited from the parent element */}
-                  always
+                  Fresh <br />
                 </span>
               </span>
+              from the farm <br /> to your door
             </h1>
             <h1 className="text-4xl md:text-7xl font-jakarta font-extrabold leading-snug md:leading-tight pb-2"></h1>
-            <p className="leading-relaxed mt-5 text-md text-zinc-500">
-              Join our community of over{" "}
-              <span className="font-bold text-xl ">500+</span> leading caterers,
-              restaurateurs and hospitality businesses who enjoy better buying
-              power whilst ensuring fair pricing, traceability and quality
-              across all produce categories.
+            <p className="leading-relaxed mt-5 text-lg text-zinc-600">
+              Nelsa delivers the best of local agriculture straight to your
+              business. Say goodbye to the hassle of sourcing produce and hello
+              to a world of fresh, seasonal ingredients. Sign up today and taste
+              the difference that local, sustainable sourcing can make.
             </p>
             <div className="flex flex-row gap-2 md:gap-7 justify-start mt-16">
               <motion.button
@@ -74,10 +73,11 @@ const Home = () => {
                   </svg>
                 </span>
               </motion.button>
-              <motion.abutton
+              <motion.a
                 class="bg-white text-black font-bold border p-3 rounded-lg inline-flex items-center w-43 cursor-pointer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
+                href="/contact"
               >
                 <span className=" ml-2 flex flex-row">
                   Contact sales{" "}
@@ -105,16 +105,20 @@ const Home = () => {
                     />
                   </svg>
                 </span>
-              </motion.abutton>
+              </motion.a>
             </div>
           </div>
 
           <motion.div
-            className="md:w-2/5 flex items-center"
+            className="md:w-2/5 flex justify-end"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <img className=" rounded-lg" src={portrait} alt="landing.png" />
+            <img
+              className=" w-4/6 rounded-lg"
+              src={portrait}
+              alt="landing.png"
+            />
           </motion.div>
         </div>
       </div>
