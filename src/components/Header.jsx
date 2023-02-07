@@ -48,7 +48,7 @@ const Header = () => {
           <ul className="md:flex-row md:flex items-center md:space-x-2 ">
             <li className="link-none">
               <Link
-                to="/become-a-supplier"
+                to="/"
                 className="flex w-full px-2.5 text-md font-bold hover:text-zinc-700"
               >
                 Become a supplier
@@ -56,7 +56,7 @@ const Header = () => {
             </li>
             <li className="link-none">
               <Link
-                to="/buy"
+                to="/"
                 className="flex w-full px-2.5 text-md font-bold hover:text-zinc-700"
               >
                 Buy
@@ -64,7 +64,7 @@ const Header = () => {
             </li>
             <li className="link-none ml-0">
               <Link
-                to="/ride-with-us"
+                to="/"
                 className="flex w-full px-2.5 text-md font-bold hover:text-zinc-700"
               >
                 Riders

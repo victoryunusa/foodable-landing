@@ -9,7 +9,7 @@ const Contact = () => {
             <h1 class="text-3xl font-bold text-black sm:text-4xl">
               Contact us
             </h1>
-            <p class="mt-1 text-gray-600 dark:text-gray-400">
+            <p class="mt-1 text-zinc-400 ">
               We'd love to talk about how we can help you.
             </p>
           </div>

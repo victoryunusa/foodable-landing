@@ -8,7 +8,7 @@ import farmer from "../assets/images/farmer.png";
 import qrcode from "../assets/images/qr-code.png";
 import android from "../assets/images/playstore.svg";
 import apple from "../assets/images/icons8-apple-logo.svg";
-import portrait from "../assets/images/nelsa-landing.jpeg";
+import portrait from "../assets/images/nelsa-landing.png";
 import iphone from "../assets/images/iphone-1.png";
 import chef from "../assets/images/black-chef.jpg";
 import sustainable from "../assets/images/sustain.jpg";
