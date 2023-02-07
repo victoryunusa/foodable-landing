@@ -11,6 +11,7 @@ import apple from "../assets/images/icons8-apple-logo.svg";
 import portrait from "../assets/images/nelsa-landing.png";
 import iphone from "../assets/images/iphone-1.png";
 import chef from "../assets/images/black-chef.jpg";
+import white_chef from "../assets/images/white-chef.jpeg";
 import sustainable from "../assets/images/sustain.jpg";
 
 const Home = () => {
@@ -201,12 +202,12 @@ const Home = () => {
         <div className="md:flex justify-start  px-15 py-8 max-w-screen-xl mx-auto gap-5">
           <div className="flex flex-col w-full">
             <div className="flex flex-col">
-              <h3 className="font-bold font-jakarta text-6xl mb-5">
+              <h3 className="font-bold font-jakarta text-5xl mb-5">
                 Join hundreds of our customers and...
               </h3>
             </div>
             <div className="flex flex-row gap-10 w-full mt-10 overflow-x-auto">
-              <div className="w-full md:w-1/3 bg-black text-white p-10 rounded-lg">
+              <div className="w-full md:w-1/3 bg-zinc-100 hover:bg-black hover:text-white p-10 rounded-lg">
                 <div className="mb-5">
                   <img className="rounded-lg" src={chef} alt="Chef" />
                 </div>
@@ -225,7 +226,7 @@ const Home = () => {
               </div>
               <div className="w-full md:w-1/3 bg-zinc-100 hover:bg-black hover:text-white p-10 rounded-lg">
                 <div className="mb-5">
-                  <img className="rounded-lg" src={chef} alt="Chef" />
+                  <img className="rounded-lg" src={white_chef} alt="Chef" />
                 </div>
                 <div className="mb-1">
                   <h3 className="font-bold font-jakarta text-2xl">
