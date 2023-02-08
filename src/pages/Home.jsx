@@ -8,7 +8,7 @@ import farmer from "../assets/images/farmer.png";
 import qrcode from "../assets/images/qr-code.png";
 import android from "../assets/images/playstore.svg";
 import apple from "../assets/images/icons8-apple-logo.svg";
-import portrait from "../assets/images/nelsa-landing.png";
+import portrait from "../assets/images/keto.png";
 import iphone from "../assets/images/iphone-1.png";
 import chef from "../assets/images/black-chef.jpg";
 import white_chef from "../assets/images/white-chef.jpeg";
@@ -115,11 +115,7 @@ const Home = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <img
-              className=" w-4/6 rounded-lg"
-              src={portrait}
-              alt="landing.png"
-            />
+            <img className="rounded-lg" src={portrait} alt="landing.png" />
           </motion.div>
         </div>
       </div>
