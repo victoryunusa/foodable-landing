@@ -5,7 +5,7 @@ import "animate.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-document.title = "Nelsa";
+document.title = "Nelsa - Africa's leading B2B fresh produce platform";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
