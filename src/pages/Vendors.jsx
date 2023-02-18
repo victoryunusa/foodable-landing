@@ -1,6 +1,6 @@
 import React from "react";
 
-import woman from "../assets/images/woman_farmer.png";
+import woman from "../assets/images/woman_farmer_2.jpg";
 
 const Vendors = () => {
   return (
