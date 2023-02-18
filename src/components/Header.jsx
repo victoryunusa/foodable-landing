@@ -14,7 +14,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between text-black">
         <div className="">
           <Link to="/" className="text-3xl font-alata tracking-wide font-bold">
-            <img className="w-20" src={logo} alt="logo" />
+            <img className="w-28" src={logo} alt="logo" />
           </Link>
         </div>
         <div onClick={onClose} className="md:hidden cursor-pointer">
@@ -48,7 +48,7 @@ const Header = () => {
           <ul className="md:flex-row md:flex items-center md:space-x-2 ">
             <li className="link-none">
               <Link
-                to="/"
+                to="/become-a-supplier"
                 className="flex w-full px-2.5 text-md font-bold hover:text-zinc-700"
               >
                 Become a supplier
@@ -85,7 +85,7 @@ const Header = () => {
             href="https://app.getnelsa.com"
             target="_blank"
             rel="noreferrer"
-            className="flex justify-center items-center text-md bg-nelsa_lime hover:bg-nelsa_lime_1 font-bold text-black p-3 w-32 rounded-lg"
+            className="flex justify-center items-center text-md bg-nelsa_lime hover:bg-nelsa_lime_2 font-bold text-black p-3 w-32 rounded-lg"
           >
             Sign In
           </a>

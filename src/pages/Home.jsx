@@ -11,38 +11,33 @@ import apple from "../assets/images/icons8-apple-logo.svg";
 import portrait from "../assets/images/keto.png";
 import iphone from "../assets/images/iphone-1.png";
 import chef from "../assets/images/black-chef.jpg";
-import white_chef from "../assets/images/white-chef.jpeg";
+import white_chef from "../assets/images/white-chef.jpg";
 import sustainable from "../assets/images/sustain.jpg";
 
 const Home = () => {
-  const register = () => {
-    window.open("https://app.getnelsa.com/");
-  };
-
   return (
     <>
       <div className={`bg-white p-4`}>
-        <div className="flex flex-col-reverse md:flex md:flex-row justify-between py-10 my-10 max-w-screen-xl gap-10 mx-auto text-black pt-5 md:pt-10 ">
+        <div className="flex flex-col-reverse md:flex md:flex-row justify-between py-10 my-10 max-w-screen-xl gap-10 mx-auto pt-5 md:pt-10 ">
           <div className="md:w-3/5 mb-2">
-            <h1 className="text-4xl md:text-7xl font-jakarta font-extrabold tracking-wide leading-snug md:leading-tight">
+            <h1 className="text-4xl md:text-6xl font-jakarta font-extrabold tracking-wide leading-snug md:leading-tight">
               <span className=" bg-app-bg bg-[length:100%]">
-                <span className="text-black ">
+                <span className="">
                   {/* Style will be inherited from the parent element */}
                   Fresh <br />
                 </span>
               </span>
               from the farm <br /> to your door
             </h1>
-            <h1 className="text-4xl md:text-7xl font-jakarta font-extrabold leading-snug md:leading-tight pb-2"></h1>
-            <p className="leading-relaxed mt-5 text-lg text-zinc-600">
-              Nelsa delivers the best of local agriculture straight to your
+            <p className="leading-relaxed mt-5 text-md text-zinc-700">
+              We deliver the best of local agriculture straight to your
               business. Say goodbye to the hassle of sourcing produce and hello
               to a world of fresh, seasonal ingredients. Sign up today and taste
               the difference that local, sustainable sourcing can make.
             </p>
             <div className="flex flex-row gap-2 md:gap-7 justify-start mt-16">
-              <motion.button
-                onClick={() => register()}
+              <motion.a
+                href="https://app.getnelsa.com/auth/register"
                 class="bg-black text-white font-bold p-3 rounded-lg inline-flex items-center w-56"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -73,7 +68,7 @@ const Home = () => {
                     />
                   </svg>
                 </span>
-              </motion.button>
+              </motion.a>
               <motion.a
                 class="bg-white text-black font-bold border p-3 rounded-lg inline-flex items-center w-43 cursor-pointer"
                 whileHover={{ scale: 1.1 }}
@@ -120,13 +115,13 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-zinc-50 p-5 md:p-20">
+      <div className="bg-zinc-100 p-5 md:p-20">
         <Animated
           animationIn="fadeInRight"
           animationOut="fadeOut"
           isVisible={true}
         >
-          <div className="md:flex md:flex-row flex flex-col justify-between p-5 md:p-10 max-w-screen-xl mx-auto bg-zinc-50 rounded-lg gap-5">
+          <div className="md:flex md:flex-row flex flex-col justify-between p-5 md:p-10 max-w-screen-xl mx-auto rounded-lg gap-5">
             <div className="md:w-1/4 mb-7 md:mb-0 rounded-md">
               <div className="flex flex-row gap-3">
                 <div className="">
@@ -136,7 +131,7 @@ const Home = () => {
                   <h1 className="text-2xl font-bold font-jakarta">
                     Super Fresh
                   </h1>
-                  <p className="leading-snug tracking-tight text-zinc-600 w-44 mt-2">
+                  <p className="leading-snug tracking-tight text-zinc-700 w-44 mt-2">
                     12 hours from farm to your door
                   </p>
                 </div>
@@ -149,7 +144,7 @@ const Home = () => {
                 </div>
                 <div>
                   <h1 className="text-2xl font-bold font-jakarta">Safe</h1>
-                  <p className="leading-snug tracking-tight text-zinc-600 w-44 mt-2">
+                  <p className="leading-snug tracking-tight text-zinc-700 w-44 mt-2">
                     Responsibly grown, hygeinically packed
                   </p>
                 </div>
@@ -166,7 +161,7 @@ const Home = () => {
                 </div>
                 <div>
                   <h1 className="text-2xl font-bold font-jakarta">Traceable</h1>
-                  <p className="leading-snug tracking-tight text-zinc-600 w-44 mt-2">
+                  <p className="leading-snug tracking-tight text-zinc-700 w-44 mt-2">
                     QR code to trace the source farm
                   </p>
                 </div>
@@ -185,7 +180,7 @@ const Home = () => {
                   <h1 className="text-2xl font-bold font-jakarta">
                     Support farmers
                   </h1>
-                  <p className="leading-snug tracking-tight text-zinc-600 w-44 mt-2">
+                  <p className="leading-snug tracking-tight text-zinc-700 w-44 mt-2">
                     Help smallholder farmers earn more
                   </p>
                 </div>
@@ -202,52 +197,52 @@ const Home = () => {
                 Join hundreds of our customers and...
               </h3>
             </div>
-            <div className="flex flex-row gap-10 w-full mt-10 overflow-x-auto">
-              <div className="w-full md:w-1/3 bg-zinc-100 hover:bg-black hover:text-white p-10 rounded-lg">
+            <div className="flex flex-row gap-10 w-full mt-5 overflow-x-auto">
+              <div className="w-full md:w-1/3 bg-black text-white p-10 rounded-lg">
                 <div className="mb-5">
                   <img className="rounded-lg" src={chef} alt="Chef" />
                 </div>
                 <div className="mb-1 w-full">
-                  <h3 className="font-bold font-jakarta text-2xl">
+                  <h3 className="font-bold font-jakarta text-3xl">
                     Be efficient
                   </h3>
                 </div>
                 <div className="w-full">
-                  <p className="text-zinc-500">
+                  <p className="text-zinc-300">
                     Save yourself time, money and stress thanks to our
                     collective buying power, multi-product consolidated
                     deliveries, and customer-centric approach
                   </p>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 bg-zinc-100 hover:bg-black hover:text-white p-10 rounded-lg">
+              <div className="w-full md:w-1/3 bg-black text-white p-10 rounded-lg">
                 <div className="mb-5">
                   <img className="rounded-lg" src={white_chef} alt="Chef" />
                 </div>
                 <div className="mb-1">
-                  <h3 className="font-bold font-jakarta text-2xl">
+                  <h3 className="font-bold font-jakarta text-3xl">
                     Be in control
                   </h3>
                 </div>
                 <div>
-                  <p className="text-zinc-500">
+                  <p className="text-zinc-300">
                     Get traceable, fresher products and the ability to make
                     informed, cost-efficient purchasing decisions through our
                     shortened supply chain and on-demand, direct sourcing
                   </p>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 bg-zinc-100 hover:bg-black hover:text-white p-10 rounded-lg">
+              <div className="w-full md:w-1/3 bg-black text-white p-10 rounded-lg">
                 <div className="mb-5">
                   <img className="rounded-lg" src={sustainable} alt="Chef" />
                 </div>
                 <div className="mb-1">
-                  <h3 className="font-bold font-jakarta text-2xl">
+                  <h3 className="font-bold font-jakarta text-3xl">
                     Be sustainable
                   </h3>
                 </div>
                 <div>
-                  <p className="text-zinc-500">
+                  <p className="text-zinc-300">
                     Minimise your CO2 footprint, know where your products have
                     come from, and have a positive impact on our cities through
                     our decentralised supply model and greener last mile
@@ -315,7 +310,7 @@ const Home = () => {
                     <h1 className="font-jakarta font-bold text-2xl">
                       Add items to cart
                     </h1>
-                    <h1 className="text-zinc-600 mt-1">
+                    <h1 className="text-zinc-700 mt-1">
                       Sign in and collect all your produce to cart.
                     </h1>
                   </div>
@@ -377,7 +372,7 @@ const Home = () => {
                     <h1 className="font-jakarta font-bold text-2xl">
                       Continue to payment
                     </h1>
-                    <h1 className=" text-zinc-600 mt-1">
+                    <h1 className=" text-zinc-700 mt-1">
                       Choose to pay now, pay on delivery or pay later.
                     </h1>
                   </div>
@@ -474,7 +469,7 @@ const Home = () => {
                     <h1 className="font-jakarta font-bold text-2xl">
                       Wait for your delivery
                     </h1>
-                    <h1 className=" text-zinc-600 mt-1">
+                    <h1 className=" text-zinc-700 mt-1">
                       We'll deliver as early as possible.
                     </h1>
                   </div>
@@ -486,7 +481,7 @@ const Home = () => {
                 <h1 className="font-jakarta font-bold text-5xl tracking-wide leading-snug md:leading-tight">
                   Simple steps to get started
                 </h1>
-                <h3 className=" text-lg text-zinc-600 mt-5">
+                <h3 className="mt-5 text-zinc-700">
                   We believe that food should be delicious, ingredients should
                   be high quality, and meals should be easy to prepare. We make
                   it easy to stock up on great products from trusted brands at
@@ -494,8 +489,8 @@ const Home = () => {
                 </h3>
               </div>
               <div className="mt-10">
-                <motion.button
-                  onClick={() => register()}
+                <motion.a
+                  href="https://app.getnelsa.com/auth/register"
                   class="bg-black text-white font-bold p-3 rounded-lg  inline-flex items-center w-56"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -526,7 +521,7 @@ const Home = () => {
                       />
                     </svg>
                   </span>
-                </motion.button>
+                </motion.a>
               </div>
             </div>
           </div>
@@ -540,7 +535,7 @@ const Home = () => {
                 <h1 className="font-jakarta font-bold text-5xl tracking-tight text-black mb-5">
                   Stock and restock with ease
                 </h1>
-                <h3 className=" text-lg text-black">
+                <h3 className="text-zinc-800">
                   Handle everything from making orders and approving payments,
                   to checking balances, seeing your business performance and
                   lots more.
@@ -574,6 +569,46 @@ const Home = () => {
           <div className="md:w-2/5">
             <img className="self-end  w-full" src={iphone} alt="landing.png" />
           </div>
+        </div>
+      </div>
+      <div className="bg-black p-4">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+          <figure class="max-w-screen-md mx-auto">
+            <svg
+              class="h-12 mx-auto mb-3 text-zinc-400"
+              viewBox="0 0 24 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                fill="currentColor"
+              />
+            </svg>
+            <blockquote>
+              <p class="text-2xl font-medium text-gray-900 dark:text-white">
+                "I've been using Nelsa for the past few months to source fresh
+                produce for my restaurant, and I've been absolutely impressed
+                with the level of service and quality of the products I've
+                received."
+              </p>
+            </blockquote>
+            <figcaption class="flex items-center justify-center mt-6 space-x-3">
+              <img
+                class="w-6 h-6 rounded-full"
+                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                alt="profile picture"
+              />
+              <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                <div class="pr-3 font-medium text-gray-900 dark:text-white">
+                  Yakubu Ishaq
+                </div>
+                <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
+                  GM at Sawalino Hotel
+                </div>
+              </div>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </>
