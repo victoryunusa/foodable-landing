@@ -17,33 +17,8 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src="https://platform.illow.io/banner.js?siteId=bc3e8834-f539-4dc8-bef0-85705fd911a2"></script>
-    <!-- Start of Async Drift Code -->
-    <script>
-      "use strict";
-      
-      !function() {
-        var t = window.driftt = window.drift = window.driftt || [];
-        if (!t.init) {
-          if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-          t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-          t.factory = function(e) {
-            return function() {
-              var n = Array.prototype.slice.call(arguments);
-              return n.unshift(e), t.push(n), t;
-            };
-          }, t.methods.forEach(function(e) {
-            t[e] = t.factory(e);
-          }), t.load = function(t) {
-            var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-            var i = document.getElementsByTagName("script")[0];
-            i.parentNode.insertBefore(o, i);
-          };
-        }
-      }();
-      drift.SNIPPET_VERSION = '0.3.1';
-      drift.load('dzhwhv433yf2');
-      </script>
+    <!-- Start of Async CRISP Code -->
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="6014cb11-cab3-4646-8abd-ed69b0a9dfe1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
       <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HW84V71N44"></script>
@@ -55,6 +30,19 @@
       gtag('config', 'G-HW84V71N44');
     </script>
   <!-- End of Async Drift Code -->
+
+  <script>
+    window.axeptioSettings = {
+      clientId: "640f6ce292cea3a28411dcd0",
+      cookiesVersion: "nelsa-en",
+    };
+     
+    (function(d, s) {
+      var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+      e.async = true; e.src = "//static.axept.io/sdk.js";
+      t.parentNode.insertBefore(e, t);
+    })(document, "script");
+    </script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.

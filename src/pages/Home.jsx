@@ -8,7 +8,7 @@ import farmer from "../assets/images/farmer.png";
 import qrcode from "../assets/images/qr-code.png";
 import android from "../assets/images/playstore.svg";
 import apple from "../assets/images/icons8-apple-logo.svg";
-import portrait from "../assets/images/keto.png";
+import portrait from "../assets/images/home.png";
 import iphone from "../assets/images/iphone-1.png";
 import chef from "../assets/images/black-chef.jpg";
 import white_chef from "../assets/images/white-chef.jpg";
@@ -19,8 +19,8 @@ const Home = () => {
     <>
       <div className={`bg-white p-4`}>
         <div className="flex flex-col-reverse md:flex md:flex-row justify-between py-10 my-10 max-w-screen-xl gap-10 mx-auto pt-5 md:pt-10 ">
-          <div className="md:w-3/5 mb-2">
-            <h1 className="text-4xl md:text-6xl font-jakarta font-extrabold tracking-wide leading-snug md:leading-tight">
+          <div className="md:w-1/2 mb-2">
+            <h1 className="text-4xl md:text-7xl font-pally font-extrabold">
               <span className=" bg-app-bg bg-[length:100%]">
                 <span className="">
                   {/* Style will be inherited from the parent element */}
@@ -29,7 +29,7 @@ const Home = () => {
               </span>
               from the farm <br /> to your door
             </h1>
-            <p className="leading-relaxed mt-5 text-md text-zinc-700">
+            <p className="leading-relaxed mt-5 text-zinc-700">
               We deliver the best of local agriculture straight to your
               business. Say goodbye to the hassle of sourcing produce and hello
               to a world of fresh, seasonal ingredients. Sign up today and taste
@@ -106,11 +106,11 @@ const Home = () => {
           </div>
 
           <motion.div
-            className="md:w-2/5 flex justify-end"
+            className="md:w-1/2 flex justify-end"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <img className="rounded-lg" src={portrait} alt="landing.png" />
+            <img className="rounded-lg fit" src={portrait} alt="landing.png" />
           </motion.div>
         </div>
       </div>
@@ -128,9 +128,7 @@ const Home = () => {
                   <img src={fresh} alt="retail" className="w-10 md:w-12 pb-2" />
                 </div>
                 <div className="">
-                  <h1 className="text-2xl font-bold font-jakarta">
-                    Super Fresh
-                  </h1>
+                  <h1 className="text-2xl font-bold">Super Fresh</h1>
                   <p className="leading-snug tracking-tight text-zinc-700 w-44 mt-2">
                     12 hours from farm to your door
                   </p>
@@ -143,7 +141,7 @@ const Home = () => {
                   <img src={safe} alt="retail" className="w-10 md:w-12 pb-2" />
                 </div>
                 <div>
-                  <h1 className="text-2xl font-bold font-jakarta">Safe</h1>
+                  <h1 className="text-2xl font-bold">Safe</h1>
                   <p className="leading-snug tracking-tight text-zinc-700 w-44 mt-2">
                     Responsibly grown, hygeinically packed
                   </p>
@@ -160,7 +158,7 @@ const Home = () => {
                   />
                 </div>
                 <div>
-                  <h1 className="text-2xl font-bold font-jakarta">Traceable</h1>
+                  <h1 className="text-2xl font-bold">Traceable</h1>
                   <p className="leading-snug tracking-tight text-zinc-700 w-44 mt-2">
                     QR code to trace the source farm
                   </p>
@@ -177,9 +175,7 @@ const Home = () => {
                   />
                 </div>
                 <div>
-                  <h1 className="text-2xl font-bold font-jakarta">
-                    Support farmers
-                  </h1>
+                  <h1 className="text-2xl font-bold">Support farmers</h1>
                   <p className="leading-snug tracking-tight text-zinc-700 w-44 mt-2">
                     Help smallholder farmers earn more
                   </p>
@@ -193,7 +189,7 @@ const Home = () => {
         <div className="md:flex justify-start  px-15 py-8 max-w-screen-xl mx-auto gap-5">
           <div className="flex flex-col w-full">
             <div className="flex flex-col">
-              <h3 className="font-bold font-jakarta text-5xl mb-5">
+              <h3 className="font-bold text-5xl mb-5">
                 Join hundreds of our customers and...
               </h3>
             </div>
@@ -203,9 +199,7 @@ const Home = () => {
                   <img className="rounded-lg" src={chef} alt="Chef" />
                 </div>
                 <div className="mb-1 w-full">
-                  <h3 className="font-bold font-jakarta text-3xl">
-                    Be efficient
-                  </h3>
+                  <h3 className="font-bold text-3xl">Be efficient</h3>
                 </div>
                 <div className="w-full">
                   <p className="text-zinc-300">
@@ -220,9 +214,7 @@ const Home = () => {
                   <img className="rounded-lg" src={white_chef} alt="Chef" />
                 </div>
                 <div className="mb-1">
-                  <h3 className="font-bold font-jakarta text-3xl">
-                    Be in control
-                  </h3>
+                  <h3 className="font-bold text-3xl">Be in control</h3>
                 </div>
                 <div>
                   <p className="text-zinc-300">
@@ -237,9 +229,7 @@ const Home = () => {
                   <img className="rounded-lg" src={sustainable} alt="Chef" />
                 </div>
                 <div className="mb-1">
-                  <h3 className="font-bold font-jakarta text-3xl">
-                    Be sustainable
-                  </h3>
+                  <h3 className="font-bold text-3xl">Be sustainable</h3>
                 </div>
                 <div>
                   <p className="text-zinc-300">
@@ -307,9 +297,7 @@ const Home = () => {
                     </svg>
                   </div>
                   <div className="w-3/4">
-                    <h1 className="font-jakarta font-bold text-2xl">
-                      Add items to cart
-                    </h1>
+                    <h1 className=" font-bold text-2xl">Add items to cart</h1>
                     <h1 className="text-zinc-700 mt-1">
                       Sign in and collect all your produce to cart.
                     </h1>
@@ -369,9 +357,7 @@ const Home = () => {
                     </svg>
                   </div>
                   <div className="w-3/4">
-                    <h1 className="font-jakarta font-bold text-2xl">
-                      Continue to payment
-                    </h1>
+                    <h1 className=" font-bold text-2xl">Continue to payment</h1>
                     <h1 className=" text-zinc-700 mt-1">
                       Choose to pay now, pay on delivery or pay later.
                     </h1>
@@ -466,7 +452,7 @@ const Home = () => {
                     </svg>
                   </div>
                   <div className="w-3/4">
-                    <h1 className="font-jakarta font-bold text-2xl">
+                    <h1 className=" font-bold text-2xl">
                       Wait for your delivery
                     </h1>
                     <h1 className=" text-zinc-700 mt-1">
@@ -478,7 +464,7 @@ const Home = () => {
             </div>
             <div className="md:w-3/5 flex flex-col justify-center md:p-28 p-5">
               <div ClassName="flex ">
-                <h1 className="font-jakarta font-bold text-5xl tracking-wide leading-snug md:leading-tight">
+                <h1 className=" font-bold text-5xl tracking-wide leading-snug md:leading-tight">
                   Simple steps to get started
                 </h1>
                 <h3 className="mt-5 text-zinc-700">
@@ -532,7 +518,7 @@ const Home = () => {
           <div className="md:w-3/5">
             <div className="md:p-16 p-6 flex flex-col justify-between">
               <div className="flex flex-col">
-                <h1 className="font-jakarta font-bold text-5xl tracking-tight text-black mb-5">
+                <h1 className="font-bold text-5xl tracking-tight text-black mb-5">
                   Stock and restock with ease
                 </h1>
                 <h3 className="text-zinc-800">
