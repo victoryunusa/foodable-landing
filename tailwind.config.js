@@ -12,8 +12,8 @@ module.exports = {
       },
       colors: {
         nelsa_lime: "#DDF246",
-        nelsa_lime_1: "#E6F859",
-        nelsa_lime_2: "E8FF50",
+        nelsa_orange: "#8A2E95",
+        nelsa_blue: "#ff312e",
       },
       backgroundImage: {
         "app-bg": "url('./assets/images/app-bg.png')",
