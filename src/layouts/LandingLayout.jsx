@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import LandingFooter from "../components/LandingFooter";
 import LandingHeader from "../components/LandingHeader";
 
 const LandingLayout = () => {
@@ -9,6 +10,9 @@ const LandingLayout = () => {
         <LandingHeader />
       </div>
       <Outlet />
+      <div className="bg-black">
+        <LandingFooter />
+      </div>
     </div>
   );
 };
