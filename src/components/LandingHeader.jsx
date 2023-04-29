@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../assets/images/nelsa-logo.svg";
+import logo from "../assets/images/nelsa-logo-white.svg";
 
 const LandingHeader = () => {
   const [active, setActive] = useState(false);
@@ -13,7 +13,7 @@ const LandingHeader = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between text-black">
         <div className="">
           <Link to="/" className="text-3xl font-alata tracking-wide font-bold">
-            <img className="w-28" src={logo} alt="logo" />
+            <img className="w-24" src={logo} alt="logo" />
           </Link>
         </div>
         <div onClick={onClose} className="md:hidden cursor-pointer">

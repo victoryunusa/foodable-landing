@@ -9,11 +9,13 @@ module.exports = {
         quicksand: ["Quicksand", "sans-serif"],
         pally: ["Pally", "sans-serif"],
         outfit: ["Outfit", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
+        clash: ["Clash Display", "sans-serif"],
       },
       colors: {
         nelsa_lime: "#DDF246",
         nelsa_orange: "#8A2E95",
-        nelsa_blue: "#ff312e",
+        nelsa_blue: "#5efc8d",
       },
       backgroundImage: {
         "app-bg": "url('./assets/images/app-bg.png')",

@@ -5,14 +5,14 @@ import LandingHeader from "../components/LandingHeader";
 
 const LandingLayout = () => {
   return (
-    <div className="min-w-screen m-0 p-0  font-outfit text-zinc-900 overflow-x-hidden">
-      <div className="bg-white p-4">
+    <div className="bg-[#191716] min-w-screen m-0 p-0 antialiased text-md leading-relaxed  font-outfit text-white overflow-x-hidden">
+      <div className=" p-4">
         <LandingHeader />
       </div>
       <Outlet />
-      <div className="bg-black">
+      {/* <div className="bg-black">
         <LandingFooter />
-      </div>
+      </div> */}
     </div>
   );
 };
