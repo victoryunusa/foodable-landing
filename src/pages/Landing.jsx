@@ -19,18 +19,18 @@ function Landing() {
       <div className="p-5">
         <div className="flex flex-col justify-between items-center mt-5 md:mt-20 gap-10 ">
           <div className="mx-28 w-2/3 flex flex-col gap-10 items-center justify-center">
-            <h1 className="text-3xl text-center md:text-7xl font-clash font-semibold">
-              The operating system for savvy <br />
+            <h1 className="text-4xl text-center md:text-7xl font-clash font-semibold">
+              The secret ingredient to your <br />
               <span className="text-nelsa_blue">
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
                   words={[
-                    "restaurants.",
-                    "bars.",
-                    "eatries.",
-                    "cafes.",
-                    "canteens.",
-                    "food trucks.",
+                    "restaurant's",
+                    "bar's",
+                    "eatries'",
+                    "cafe's",
+                    "canteen's",
+                    "food trucks'",
                   ]}
                   loop={0}
                   cursor
@@ -40,9 +40,11 @@ function Landing() {
                   delaySpeed={1000}
                 />
               </span>
+              <br />
+              success.
             </h1>
 
-            <p className=" text-zinc-200 text-center text-xl">
+            <p className=" text-zinc-200 text-center text-sm  md:text-xl">
               Nelsa is a comprehensive restaurant management platform that
               combines all the tools you need to run your restaurant in one
               place. Our software offers an intuitive and easy-to-use point of

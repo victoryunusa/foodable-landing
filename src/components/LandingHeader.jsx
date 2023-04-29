@@ -44,6 +44,14 @@ const LandingHeader = () => {
    md:static md:w-auto md:flex-row md:flex md:space-x-5
   `}
         >
+          <a
+            href="mailto:admin@getnelsa.com"
+            target="_blank"
+            rel="noreferrer"
+            className="flex justify-center items-center text-md bg-nelsa_blue hover:bg-nelsa_lime_2 font-bold text-black p-3 w-32 rounded-lg"
+          >
+            Contact us
+          </a>
           <ul className="md:flex-row md:flex items-center md:space-x-2 "></ul>
         </nav>
       </div>
