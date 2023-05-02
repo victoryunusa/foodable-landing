@@ -55,7 +55,7 @@ function Landing() {
             </p>
 
             <motion.a
-              href="https://hxditw01xh6.typeform.com/to/aKqnYgq0"
+              href="https://forms.gle/MiZt5JGjoRpH8EEF8"
               target="_blank"
               class="bg-nelsa_blue text-black font-bold p-3 rounded-lg inline-flex items-center"
               whileHover={{ scale: 1.1 }}
