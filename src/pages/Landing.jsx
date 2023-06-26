@@ -20,17 +20,18 @@ function Landing() {
         <div className="flex flex-col justify-between items-center mt-5 md:mt-20 gap-10 ">
           <div className="mx-28 w-2/3 flex flex-col gap-10 items-center justify-center">
             <h1 className="text-4xl text-center md:text-7xl font-clash font-semibold">
-              The secret ingredient to your <br />
+              Be the <br />
               <span className="text-nelsa_blue">
                 {/* Style will be inherited from the parent element */}
                 <Typewriter
                   words={[
-                    "restaurant's",
-                    "bar's",
-                    "eatries'",
-                    "cafe's",
-                    "canteen's",
-                    "food trucks'",
+                    "Restaurant",
+                    "Bar",
+                    "Eatry",
+                    "Cafe",
+                    "Canteen",
+                    "Buka",
+                    "Food truck",
                   ]}
                   loop={0}
                   cursor
@@ -41,17 +42,17 @@ function Landing() {
                 />
               </span>
               <br />
-              success.
+              your customers ❤️.
             </h1>
 
             <p className=" text-zinc-200 text-center text-sm  md:text-xl">
-              Nelsa is a comprehensive restaurant management platform that
-              combines all the tools you need to run your restaurant in one
-              place. Our software offers an intuitive and easy-to-use point of
-              sale system, robust HR and payroll management features, seamless
-              payment processing, and a suite of third-party integrations to
-              help you optimize your operations, grow your revenue, and deliver
-              an exceptional guest experience.
+              Imagine a world where running your restaurant is effortless. At
+              Nelsa, we've developed an intuitive platform that seamlessly
+              manages your restaurant operations, streamlines your payment
+              processing, and provides actionable insights, empowering you to
+              thrive in the competitive food industry with ease. With Nelsa, you
+              can focus on delivering exceptional dining experiences while we
+              take care of the rest.
             </p>
 
             <motion.a
@@ -127,7 +128,7 @@ function Landing() {
               <div className="flex flex-row gap-3">
                 <div>
                   <h1 className="text-2xl font-bold text-zinc-900 font-ralway">
-                    Online Ordering
+                    QR & Online Ordering
                   </h1>
                   <p className="leading-snug tracking-tight text-zinc-700 w-44 mt-2">
                     Allow guests to easily order directly from your website
