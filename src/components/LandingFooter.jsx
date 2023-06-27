@@ -81,10 +81,10 @@ const LandingFooter = () => {
         </div>
         <div className="flex justify-between pt-4">
           <div>
-            <p className="text-sm">© Nelsa {prod_year.getFullYear()}</p>
+            <p className="text-md">© Nelsa, Inc. {prod_year.getFullYear()}</p>
           </div>
           <div>
-            <p className="text-sm">
+            <p className="text-md">
               Terms and conditions · Privacy policy · Cookies
             </p>
           </div>

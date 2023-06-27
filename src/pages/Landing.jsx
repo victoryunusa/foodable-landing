@@ -58,7 +58,7 @@ function Landing() {
             <motion.a
               href="https://forms.gle/MiZt5JGjoRpH8EEF8"
               target="_blank"
-              class="bg-nelsa_blue text-black font-bold p-3 rounded-lg inline-flex items-center"
+              class="bg-nelsa_blue text-white font-bold p-3 rounded-lg inline-flex items-center"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >

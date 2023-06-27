@@ -10,9 +10,9 @@ const LandingLayout = () => {
         <LandingHeader />
       </div>
       <Outlet />
-      {/* <div className="bg-black">
+      <div className="bg-[#191716]">
         <LandingFooter />
-      </div> */}
+      </div>
     </div>
   );
 };
