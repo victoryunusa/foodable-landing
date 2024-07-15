@@ -5,7 +5,7 @@ import "animate.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-document.title = "Nelsa - The operating food systems for savvy Food Businesses";
+document.title = "Cloud based POS system - Nelsa";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
